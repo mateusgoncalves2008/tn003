@@ -11,9 +11,11 @@
 }
 
 @font-face {
-    font-family: "Avenir finoI";
-    src: url("font/") format();
+    font-family: " Avenir finoI ";
+    src: url("font/avenir-similar-fonts/avenir-similar-fonts/TT-Norms-Font/TT-Norms-Thin.otf")
+        format(opentype);
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -48,7 +50,7 @@ body {
 
 #nav-header {
     background-color: var(--cor1);
-    padding: 20px;
+    padding: 25px;
     display: flex;
     align-items: center;
     justify-items: center;
@@ -60,8 +62,8 @@ body {
     }
 
     & img {
-        width: 4rem;
-        height: 4rem;
+        width: 3rem;
+        height: 3rem;
     }
 
     & div {
@@ -70,16 +72,17 @@ body {
         text-decoration: none;
 
         & #cima {
+            font-size: 25px;
             margin: 0;
-            font-family: sans-serif;
             font-family: "Avenir grosso";
             font-weight: normal;
         }
 
         & #baixo {
-            font-family: "Avenir fino";
+            font-size: 28px;
+            font-family: " Avenir finoI ";
             margin: 0;
-            font-weight: normal;
+            font-weight: bold;
         }
     }
 }
@@ -90,18 +93,22 @@ nav {
     position: fixed;
     flex-direction: row;
     width: 100%;
+    height: 6rem;
+    z-index: 10;
 }
 
 #link-nav {
-    display: flex;
+    display:  flex;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 30px;
 
     & a {
         color: var(--cor3);
         text-decoration: none;
         padding: 20px;
-        font-family: "Avenir fino";
+        font-size: 14px;
+        font-family: " Avenir finoI ";
+        font-weight: bold;
     }
 
     & a:hover {
@@ -178,6 +185,8 @@ nav {
         max-width: 83%;
         line-height: 1.6em;
         font-size: 15px;
+        font-family: " Avenir finoI ";
+        font-weight: bold;
     }
 
     & img {
@@ -213,53 +222,52 @@ nav {
 section {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 90%;
 
     .corpo {
         flex: 1;
         height: 85.1%;
         display: flex;
-     
-       
+
         flex-direction: column;
         align-items: end;
 
         p {
             text-align: left;
-            font-family: "Avenir fino";
+            font-family: " Avenir finoI ";
+            font-weight: bold;
             max-width: 49%;
             line-height: 1.7em;
             font-size: 17px;
+            margin: 2rem 3.5rem 0rem 0rem;
         }
     }
 
     .corpo h2 {
         font-size: 3rem;
-        margin: 0 0 12px;
+        padding: 3.3rem 3rem 0rem 0rem;
         letter-spacing: 4px;
         font-family: "Avenir grosso";
     }
     #container-span {
         display: flex;
         align-items: center;
-        width: 50%;
-        
+        width: 57%;
     }
 
     #accent {
-            display: block;
-            width: 6.9rem;
-            height: 8px;
-            background: var(--cor1);
-            margin: 16px 0;
-        }
+        display: block;
+        width: 6.9rem;
+        height: 8px;
+        background: var(--cor1);
+        margin: 16px 0;
+    }
 
     #image {
-        z-index: 1;
         flex: 1;
         display: flex;
         max-width: 90%;
-        max-height: 86%;
+        max-height: 100%;
         background-image: url("img/imagem-parallexIII.avif");
         background-size: cover;
         background-position: center;
@@ -268,7 +276,7 @@ section {
 
     #wrap {
         display: flex;
-        min-height: 57.6rem;
+        min-height: 40rem;
         background: var(--cor5);
     }
 }
@@ -294,7 +302,6 @@ aside {
             color: var(--cor4);
             font-family: "Avenir grosso";
             font-weight: normal;
-            max-width: 55%;
         }
 
         & p {
@@ -304,17 +311,23 @@ aside {
             font-weight: normal;
             max-width: 55%;
             line-height: 1.1em;
+            margin: 0rem 0rem 0rem 1rem;
         }
 
-        #pAno {
+        #Ano {
             line-height: 1.1em;
             text-align: end;
+        }
+
+        .containe-linha {
+            display: flex;
+            height: 100px;
         }
 
         #linha {
             display: block;
             width: 2px;
-            height: 4rem;
+            height: 8rem;
             background: #ffffff;
         }
     }
@@ -325,7 +338,6 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: center;
 
     & #cabecaII {
         text-align: center;
@@ -363,5 +375,104 @@ aside {
         & img {
             width: 100%;
         }
+    }
+}
+
+figure {
+    background-color: var(--cor5);
+    height: 47%;
+
+    #a {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        h2 {
+            text-align: center;
+            color: var(--cor2);
+            font-family: "Avenir grosso";
+            font-weight: normal;
+            font-size: 4rem;
+            padding: 3rem 0rem 0rem 0rem;
+        }
+
+        #accent {
+            width: 9rem;
+            height: 8px;
+            background: var(--cor1);
+            margin: 15px 0px 0px;
+        }
+    }
+
+    .cliente {
+        display: flex;
+        justify-content: center;
+    }
+
+    .foto {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        z-index: 0;
+    }
+
+    .foto {
+        margin: 2rem 1rem 0rem;
+        width: 10%;
+        height: 9rem;
+    }
+
+    .foto img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .foto #cor {
+        opacity: 0;
+    }
+
+    .foto:hover #cor {
+        opacity: 1;
+    }
+
+    .foto:hover #pb {
+        opacity: 0;
+    }
+}
+
+#articleIII {
+    background-color: var(--cor3);
+
+    #b {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        h2 {
+            text-align: center;
+            font-family: "Avenir grosso";
+            font-weight: normal;
+            font-size: 4rem;
+            color: var(--cor2);
+            padding: 3rem 0rem 0rem 0rem;
+        }
+
+        #accent {
+            width: 9rem;
+            height: 8px;
+            background: var(--cor1);
+            margin: 15px 0px 60px;
+        }
+    }
+
+    #map {
+        display: flex;
+        justify-content: center;
+        padding: 0rem 0rem 3rem 0rem;
     }
 }
