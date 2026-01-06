@@ -62,8 +62,8 @@ body {
     }
 
     & img {
-        width: 3rem;
-        height: 3rem;
+        width: 4rem;
+        height: 4rem;
     }
 
     & div {
@@ -72,72 +72,19 @@ body {
         text-decoration: none;
 
         & #cima {
-            font-size: 25px;
+            font-size: 30px;
             margin: 0;
             font-family: "Avenir grosso";
             font-weight: normal;
         }
 
         & #baixo {
-            font-size: 28px;
+            font-size: 30px;
             font-family: " Avenir finoI ";
             margin: 0;
             font-weight: bold;
         }
     }
-}
-
-nav {
-    background-color: var(--cor2);
-    display: flex;
-    position: fixed;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    height: 6rem;
-    z-index: 10;
-}
-
-#link-nav {
-    display: flex;
-    align-items: center;
-    padding-top: 30px;
-
-    & a {
-        color: var(--cor3);
-        text-decoration: none;
-        padding: 20px;
-        font-size: 14px;
-        font-family: " Avenir finoI ";
-        font-weight: bold;
-    }
-
-    & a:hover {
-        color: var(--cor1);
-        transition: 0.4s ease-in-out;
-    }
-}
-
-.bg-video {
-    position: fixed;
-    inset: 0;
-    overflow: hidden;
-    z-index: -1;
-    pointer-events: none;
-    height: 60vw;
-    top: 0;
-}
-
-.bg-video_media {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100vw;
-    height: 100%;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-    min-width: 100%;
-    min-height: 100%;
 }
 
 .site-content {
@@ -148,6 +95,11 @@ nav {
     padding-top: 13rem;
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+
+    & img {
+        height: 12%;
+        width: 9%;
+    }
 }
 
 .site-content h1 {
@@ -158,14 +110,9 @@ nav {
     margin-bottom: 3rem;
 }
 
-img {
-    height: 12%;
-    width: 9%;
-}
-
 #articleI {
     background-color: var(--cor3);
-    height: 100%;
+    height: 112%;
     width: 100%;
 
     #c {
@@ -176,15 +123,16 @@ img {
         #accentI {
             display: flex;
             width: 9%;
-            margin: 1rem 0rem 3.5rem 0rem;
+            margin: 1rem 0rem 3rem 0rem;
 
             #accent {
-                width: 8.0rem;
+                width: 8rem;
                 height: 8px;
                 background: var(--cor1);
             }
         }
     }
+
     & h2 {
         color: var(--cor2);
         font-family: "Avenir grosso";
@@ -206,7 +154,6 @@ img {
         padding: 0px 25px 12px 25px;
         max-width: 83%;
         line-height: 1.6em;
-        font-size: 15px;
         font-family: "Raleway";
     }
 
@@ -242,7 +189,7 @@ img {
 section {
     display: flex;
     width: 100%;
-    height: 90%;
+    height: 100%;
 
     .corpo {
         flex: 1;
@@ -256,10 +203,10 @@ section {
             font-family: "Raleway";
             text-align: left;
             font-weight: normal;
-            max-width: 57%;
-            line-height: 1.7em;
+            max-width: 50%;
+            line-height: 1.6em;
             font-size: 17px;
-            margin: 2rem 3.4rem 0rem 0rem;
+            margin: 2rem 6.7rem 0rem 0rem;
         }
     }
 
@@ -677,7 +624,63 @@ footer {
     }
 
     img:hover {
-        opacity: 1;
-        transform: scale(1.05);
+        opacity: 2;
+        transform: scale(1.09);
+    }
+}
+
+
+@media (min-width: 770px) and (max-width: 2560px) {
+    nav {
+        background-color: var(--cor2);
+        display: flex;
+        position: fixed;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 6rem;
+        z-index: 10;
+    }
+
+    #link-nav {
+        display: flex;
+        align-items: center;
+        padding-top: 30px;
+
+        & a {
+            color: var(--cor3);
+            text-decoration: none;
+            padding: 20px;
+            font-size: 14px;
+            font-family: " Avenir finoI ";
+            font-weight: bold;
+        }
+
+        & a:hover {
+            color: var(--cor1);
+            transition: 0.4s ease-in-out;
+        }
+    }
+
+    .bg-video {
+        position: fixed;
+        inset: 0;
+        overflow: hidden;
+        z-index: -1;
+        pointer-events: none;
+        height: 60vw;
+        top: 0;
+    }
+
+    .bg-video_media {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100vw;
+        height: 100%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        min-width: 100%;
+        min-height: 100%;
     }
 }
