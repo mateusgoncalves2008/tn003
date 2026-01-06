@@ -44,8 +44,8 @@ body {
     --cor3: #fff;
     --cor4: #3d5975;
     --cor5: #f7f7f7;
-    --cor6: ;
-    --cor7: ;
+    --cor6: #333;
+    --cor7: rgb(0, 0, 0);
 }
 
 #nav-header {
@@ -92,13 +92,14 @@ nav {
     display: flex;
     position: fixed;
     flex-direction: row;
+    justify-content: space-between;
     width: 100%;
     height: 6rem;
     z-index: 10;
 }
 
 #link-nav {
-    display:  flex;
+    display: flex;
     align-items: center;
     padding-top: 30px;
 
@@ -134,7 +135,6 @@ nav {
     width: 100vw;
     height: 100%;
     transform: translate(-50%, -50%);
-    /* transform: translate(-50%, -50%) scale(0.8); /* <--- escala */
     object-fit: cover;
     min-width: 100%;
     min-height: 100%;
@@ -144,18 +144,23 @@ nav {
     height: 60vw;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* tira do centro vertical */
+    align-items: flex-start;
     padding-top: 13rem;
-    /*transform: translateY(-90px); /* 👈 sobe */
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 }
 
 .site-content h1 {
     color: var(--cor3);
-    font-size: 3rem;
+    font-size: 4rem;
     font-family: "Avenir grosso";
-    max-width: 500px;
+    max-width: 700px;
+    margin-bottom: 3rem;
+}
+
+img {
+    height: 12%;
+    width: 9%;
 }
 
 #articleI {
@@ -163,13 +168,30 @@ nav {
     height: 100%;
     width: 100%;
 
+    #c {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        #accentI {
+            display: flex;
+            width: 9%;
+            margin: 1rem 0rem 3.5rem 0rem;
+
+            #accent {
+                width: 8.0rem;
+                height: 8px;
+                background: var(--cor1);
+            }
+        }
+    }
     & h2 {
         color: var(--cor2);
         font-family: "Avenir grosso";
         text-align: center;
         font-size: 4rem;
         font-weight: normal;
-        padding: 3rem 0rem 3rem 0rem;
+        padding: 3rem 0rem 0rem 0rem;
     }
 
     h3 {
@@ -185,8 +207,7 @@ nav {
         max-width: 83%;
         line-height: 1.6em;
         font-size: 15px;
-        font-family: " Avenir finoI ";
-        font-weight: bold;
+        font-family: "Raleway";
     }
 
     & img {
@@ -198,8 +219,7 @@ nav {
     & #fotos {
         display: flex;
         justify-content: center;
-        padding-right: 14rem;
-        padding-left: 14rem;
+        padding: 0% 18%;
         gap: 1.5rem;
     }
 
@@ -233,26 +253,26 @@ section {
         align-items: end;
 
         p {
+            font-family: "Raleway";
             text-align: left;
-            font-family: " Avenir finoI ";
-            font-weight: bold;
-            max-width: 49%;
+            font-weight: normal;
+            max-width: 57%;
             line-height: 1.7em;
             font-size: 17px;
-            margin: 2rem 3.5rem 0rem 0rem;
+            margin: 2rem 3.4rem 0rem 0rem;
         }
     }
 
     .corpo h2 {
-        font-size: 3rem;
-        padding: 3.3rem 3rem 0rem 0rem;
-        letter-spacing: 4px;
+        font-size: 3.7rem;
+        padding: 3.3rem 2.5rem 0rem 0rem;
+        letter-spacing: 2px;
         font-family: "Avenir grosso";
     }
     #container-span {
         display: flex;
         align-items: center;
-        width: 57%;
+        width: 64%;
     }
 
     #accent {
@@ -266,7 +286,7 @@ section {
     #image {
         flex: 1;
         display: flex;
-        max-width: 90%;
+        max-width: 100%;
         max-height: 100%;
         background-image: url("img/imagem-parallexIII.avif");
         background-size: cover;
@@ -309,26 +329,32 @@ aside {
             font-size: 25px;
             font-family: "Avenir grosso";
             font-weight: normal;
-            max-width: 55%;
+            max-width: 99%;
             line-height: 1.1em;
-            margin: 0rem 0rem 0rem 1rem;
         }
 
         #Ano {
+            display: block;
             line-height: 1.1em;
-            text-align: end;
+            text-align: center;
         }
 
         .containe-linha {
             display: flex;
-            height: 100px;
         }
 
         #linha {
             display: block;
-            width: 2px;
-            height: 8rem;
+            width: 2.2px;
+            height: 6rem;
             background: #ffffff;
+        }
+
+        #linha1 {
+            width: 2.4px;
+            height: 6rem;
+            background: #ffffff;
+            margin: 0px 0px 0px 10px;
         }
     }
 }
@@ -365,7 +391,7 @@ aside {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
-        width: 75%;
+        width: 70.5%;
         margin: 0 auto;
         justify-items: center;
         align-items: center;
@@ -374,6 +400,7 @@ aside {
     .projct {
         & img {
             width: 100%;
+            border-radius: 7px;
         }
     }
 }
@@ -407,6 +434,7 @@ figure {
     .cliente {
         display: flex;
         justify-content: center;
+        gap: 2.4rem;
     }
 
     .foto {
@@ -420,7 +448,7 @@ figure {
 
     .foto {
         margin: 2rem 1rem 0rem;
-        width: 10%;
+        width: 9rem;
         height: 9rem;
     }
 
@@ -433,15 +461,15 @@ figure {
     }
 
     .foto #cor {
-        opacity: 0;
+        display: none;
     }
 
     .foto:hover #cor {
-        opacity: 1;
+        display: block;
     }
 
     .foto:hover #pb {
-        opacity: 0;
+        display: none;
     }
 }
 
@@ -474,5 +502,182 @@ figure {
         display: flex;
         justify-content: center;
         padding: 0rem 0rem 3rem 0rem;
+    }
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0% 18%;
+    gap: 10rem;
+}
+
+#formulario {
+    flex-direction: column;
+    width: 27rem;
+
+    h2 {
+        font-size: 28px;
+        margin-bottom: 2rem;
+        font-family: "Avenir grosso";
+        font-weight: normal;
+    }
+
+    p {
+        color: #525456;
+        margin-bottom: 2rem;
+        line-height: 1.5;
+        font-size: 17px;
+        max-width: 100%;
+        font-family: "Raleway";
+        font-weight: normal;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 6px;
+        font-style: italic;
+        color: #525456;
+    }
+
+    input,
+    textarea {
+        width: 27rem;
+        padding: 7px;
+        margin-bottom: 5px;
+    }
+
+    input:hover {
+        border: 2px solid #333;
+    }
+
+    textarea:hover {
+        border: 2px solid #333;
+    }
+
+    textarea {
+        height: 8rem;
+        resize: none;
+    }
+
+    #button {
+        display: flex;
+        justify-content: right;
+        padding-bottom: 8rem;
+
+        button {
+            font-family: "Avenir grosso";
+            font-weight: normal;
+            background: #333;
+            color: #eacc23;
+            padding: 4px 30px;
+            font-size: 1rem;
+            border: 0px solid var(--cor6);
+            transition: 0.5s ease-in-out;
+        }
+
+        button:hover {
+            background: var(--cor1);
+            color: var(--cor6);
+            border: 0px solid var(--cor6);
+            transition: 0.5s ease-in-out;
+        }
+    }
+}
+
+#info {
+    background-color: var(--cor3);
+    align-items: center;
+
+    h2 {
+        font-size: 28px;
+        margin-bottom: 2rem;
+        font-family: "Avenir grosso";
+        font-weight: normal;
+    }
+
+    p {
+        color: #525456;
+        line-height: 1.5;
+        font-family: "Raleway";
+        font-weight: normal;
+        max-width: 70%;
+        font-size: 17px;
+    }
+
+    #p3 {
+        padding: 2rem 0rem 0rem 0rem;
+    }
+
+    .bloco {
+        margin-bottom: 35px;
+    }
+
+    #orcamento {
+        #accent {
+            display: block;
+            width: 60px;
+            height: 8px;
+            background: var(--cor1);
+            margin-bottom: 15px;
+        }
+
+        strong {
+            font-size: 28px;
+            display: block;
+            margin-top: 10px;
+        }
+    }
+}
+
+footer {
+    background-color: #111;
+    color: #ccc;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+
+    #footer {
+        max-width: 900px;
+        margin: 0 auto;
+
+        p {
+            margin: 8px 0;
+            font-size: 14px;
+            line-height: 1.6;
+
+            p:first-child {
+                font-size: 16px;
+                font-weight: 600;
+                color: #fff;
+            }
+        }
+
+        a {
+            color: #eacc23;
+            text-decoration: none;
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    #icons {
+        margin-top: 20px;
+
+        a {
+            margin: 0 8px;
+        }
+    }
+
+    img {
+        width: 28px;
+        opacity: 0.8;
+        transition: 0.3s;
+    }
+
+    img:hover {
+        opacity: 1;
+        transform: scale(1.05);
     }
 }
