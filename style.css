@@ -66,6 +66,13 @@ body {
         height: 4rem;
     }
 
+    #nav-headerI {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        padding: 0 10px;
+    }
+
     & div {
         display: flex;
         flex-direction: column;
@@ -113,7 +120,7 @@ nav {
     & a {
         color: var(--cor3);
         text-decoration: none;
-        padding: 20px;
+        padding: 0 25px;
         font-size: 14px;
         font-family: " Avenir finoI ";
         font-weight: bold;
@@ -186,6 +193,7 @@ nav {
             margin: 1rem 0rem 3rem 0rem;
 
             #accent {
+                display: flex;
                 width: 8rem;
                 height: 8px;
                 background: var(--cor1);
@@ -194,6 +202,7 @@ nav {
     }
 
     & h2 {
+        display: flex;
         color: var(--cor2);
         font-family: "Avenir grosso";
         text-align: center;
@@ -211,10 +220,11 @@ nav {
     }
 
     p {
+        display: flex;
+        font-family: "Raleway";
         padding: 0px 25px 12px 25px;
         max-width: 83%;
         line-height: 1.6em;
-        font-family: "Raleway";
     }
 
     & img {
@@ -260,6 +270,7 @@ section {
         align-items: end;
 
         p {
+            display: flex;
             font-family: "Raleway";
             text-align: left;
             font-weight: normal;
@@ -284,7 +295,7 @@ section {
     }
 
     #accent {
-        display: block;
+        display: flex;
         width: 6.9rem;
         height: 8px;
         background: var(--cor1);
@@ -385,6 +396,7 @@ aside {
         flex-direction: column;
 
         h2 {
+            display: flex;
             color: var(--cor2);
             padding: 3rem 0rem 1rem 0rem;
             font-size: 4rem;
@@ -392,6 +404,7 @@ aside {
             font-weight: normal;
         }
         #accent {
+            display: flex;
             width: 8rem;
             height: 8px;
             background: var(--cor1);
@@ -410,6 +423,7 @@ aside {
         padding: 3rem;
     }
     .projct {
+        display: flex;
         & img {
             width: 100%;
             border-radius: 7px;
@@ -446,7 +460,45 @@ figure {
     .cliente {
         display: flex;
         justify-content: center;
-        gap: 2.4rem;
+
+        .imgI {
+            display: flex;
+        }
+    }
+
+    .fotoIII {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        z-index: 0;
+    }
+
+    .fotoIII {
+        margin: 2rem 1rem 0rem;
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .fotoIII img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .fotoIII #cor {
+        display: none;
+    }
+
+    .fotoIII:hover #cor {
+        display: block;
+    }
+
+    .fotoIII:hover #pb {
+        display: none;
     }
 
     .foto {
@@ -494,6 +546,7 @@ figure {
         flex-direction: column;
 
         h2 {
+            display: flex;
             text-align: center;
             font-family: "Avenir grosso";
             font-weight: normal;
@@ -699,7 +752,7 @@ footer {
     #nav-header {
         justify-content: space-between;
         width: 100%;
-        padding: 15px;
+        padding: 5px;
 
         & img {
             width: 50px;
@@ -708,12 +761,17 @@ footer {
 
         div {
             #cima {
-                font-size: 25px;
+                font-size: 23px;
             }
 
             #baixo {
-                font-size: 25px;
+                font-size: 24px;
             }
+        }
+
+        #nav-headerI {
+            flex-direction: row;
+            gap: 0.5rem;
         }
     }
 
@@ -725,8 +783,8 @@ footer {
     }
 
     #menu-notebook span {
-        width: 30px;
-        height: 3px;
+        width: 25px;
+        height: 2.4px;
         background-color: var(--cor2);
     }
 
@@ -770,31 +828,56 @@ footer {
     }
 
     .site-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-image: url("img/img-responsiva/imagem-parallex-intro.avif");
         background-size: cover;
         background-position: center;
         background-attachment: scroll;
         height: 100%;
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        padding-top: 0rem;
     }
 
     .site-content h1 {
-        font-size: 2.3rem;
-        padding: 0 20px;
+        font-size: 2rem;
+        padding: 0;
     }
 
     #articleI {
+        background-color: var(--cor3);
+        height: 268%;
+        width: 100%;
+
+        h2 {
+            font-size: 2.4rem;
+            padding: 2rem 0rem 0rem 0rem;
+        }
+
+        #c {
+            #accentI {
+                width: 30%;
+                margin: 1rem 0rem 2rem 0rem;
+            }
+        }
+
+        p {
+            padding: 0px 25px 12px 25px;
+            max-width: 100%;
+        }
+
         #fotos {
             flex-direction: column;
-            padding: 0% 18%;
-            gap: 1.5rem;
+            padding: 0 20px;
+            gap: 1rem;
         }
     }
 
     section {
+        width: 100%;
+        height: 145%;
+
         #wrap {
             flex-direction: column-reverse;
         }
@@ -802,26 +885,98 @@ footer {
         .corpo {
             p {
                 max-width: 100%;
+                font-size: 15px;
+                margin: 0px 20px 50px 20px;
             }
         }
 
         .corpo h2 {
             justify-content: center;
-            font-size: 3rem;
-            padding: 3.3rem 0rem 0rem 0rem;
+            font-size: 37px;
+            padding: 3rem 10px 0px 20px;
+        }
+
+        #container-quem-somos {
+            #container-span {
+                width: 50%;
+            }
+
+            #accent {
+                width: 6.9rem;
+                height: 8px;
+                margin: 20px 0px 30px 20px;
+            }
         }
     }
 
     aside {
+        padding: 15px 20px;
+
         & #caixa-corpo {
             display: flex;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1.3rem;
+            }
         }
 
         .containe-linha {
             display: none !important;
             background: #ffffff00;
+        }
+    }
+
+    #articleII {
+        #cabecaII {
+            h2 {
+                padding: 3rem 0rem 1rem 0rem;
+                font-size: 2.4rem;
+            }
+            #accent {
+                width: 6rem;
+                height: 8px;
+            }
+        }
+
+        #corpoII {
+            gap: 2rem;
+            width: 90.5%;
+            align-items: center;
+            padding: 0rem 2rem 0rem 1rem;
+        }
+
+        .projct {
+            margin-bottom: 0%;
+            & img {
+                width: 120%;
+            }
+        }
+    }
+
+    figure {
+        .cliente {
+            gap: 1rem;
+
+            .imgI {
+               
+            }
+        }
+
+        .fotoIII {
+            flex-direction: row;
+            width: 70px;
+            height: 70px;
+        }
+
+        .foto {
+            width: 70px;
+            height: 70px;
         }
     }
 
@@ -831,9 +986,17 @@ footer {
             padding: 0px 20px;
         }
 
+        #b {
+            h2 {
+                font-size: 2.4rem;
+                padding: 3rem 0rem 0rem 0rem;
+            }
+        }
+
         #formulario {
             width: 100%;
         }
+
         #map {
             width: 100%;
         }
