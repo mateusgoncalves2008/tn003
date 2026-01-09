@@ -6,29 +6,40 @@
         <title>Template Construtora</title>
         <link rel="shortcut icon" href="img/logoI.avif" type="image/x-icon" />
         <link rel="stylesheet" href="style.css" />
-        <link rel="index.htmlt" href="indexI.html" />
+
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+        </style>
     </head>
     <body>
         <nav>
             <header id="nav-header">
-                <a href="/index.html">
-                    <img src="img/logoI.avif" alt="logo" />
-                </a>
-                <div>
-                    <h1 id="cima">
-                        <a href="#">ESFERA</a>
-                    </h1>
-                    <h1 id="baixo">
-                        <a href="#">CONSTRUÇÃO</a>
-                    </h1>
+                    <div id="nav-headerI">
+                        <a href="/index.html">
+                            <img src="img/logoI.avif" alt="logo" />
+                        </a>
+                        <div>
+                            <h1 id="cima">
+                                <a href="#">ESFERA</a>
+                            </h1>
+                            <h1 id="baixo">
+                                <a href="#">CONSTRUÇÃO</a>
+                            </h1>
+                        </div>
+                    </div>
+                <div id="menu-notebook" id="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </header>
-            <div id="link-nav">
+            <div id="link-nav" class="nav-links">
+                <div id="close-menu" id="close-btn"></div>
                 <a href="#">HOME</a>
                 <a href="#servicos">SERVIÇOS</a>
                 <a href="#quem somos">QUEM SOMOS</a>
                 <a href="#projetos">PROJETOS</a>
-                <a href="#">CONTATO</a>
+                <a href="#articleIII">CONTATO</a>
             </div>
         </nav>
         <div class="bg-video">
@@ -46,15 +57,29 @@
         <main class="site-content">
             <header id="header-parallex">
                 <h1>LÍDERES EM CONSTRUÇÕES E INFRAESTRUTURA</h1>
-
-                <img src="img/seta-baixo-branca.png" />
+                <a href="#servicos"
+                    ><img src="img/setaIIIIIIIIIIIIIIIIIIIIIII.avif"
+                /></a>
             </header>
         </main>
         <article id="articleI">
-            <h2 id="servicos">SERVIÇOS</h2>
+            <div id="c">
+                <h2 id="servicos">SERVIÇOS</h2>
+                <div id="accentI">
+                    <span id="accent"></span>
+                </div>
+            </div>
             <div id="fotos">
                 <div id="foto-um">
-                    <img src="img/image-com-a-mao.avif" alt="" />
+                    <picture>
+                        <source
+                            media="(max-width: 670px)"
+                            srcset="
+                                img/img-responsiva/projetos/foto-I-responsiva.avif
+                            "
+                        />
+                        <img src="img/image-com-a-maoIIIII.avif" alt="image" />
+                    </picture>
                     <h3>Planejamento de Pré Construção</h3>
                     <p>
                         O planejamento de pré-construção organiza a obra antes
@@ -64,7 +89,15 @@
                     </p>
                 </div>
                 <div id="foto-dois">
-                    <img src="img/mesa-de-pesas.avif" alt="" />
+                    <picture>
+                        <source
+                            media="(max-width: 670px)"
+                            srcset="
+                                img/img-responsiva/projetos/fotoII-responsiva.avif
+                            "
+                        />
+                        <img src="img/mesa-de-pesas.avif" alt="image" />
+                    </picture>
                     <h3>Modelo Arquitetônico</h3>
                     <p>
                         A gestão da construção garante o controle de prazos,
@@ -74,14 +107,21 @@
                     </p>
                 </div>
                 <div id="foto-tres">
-                    <img src="img/três-pessoas.avif" alt="" />
+                    <picture>
+                        <source
+                            media="(max-width: 670px)"
+                            srcset="
+                                img/img-responsiva/projetos/fotoIII-responsiva.avif
+                            "
+                        />
+                        <img src="img/três-pessoas.avif" alt="image" />
+                    </picture>
                     <h3>Gestão da Construção</h3>
                     <p>
-                        O modelo arquitetônico define a forma e a funcionalidade
-                        do projeto, unindo estética e conforto. Nessa fase são
-                        organizados os espaços, a iluminação e a identidade
-                        visual da construção. Isso permite visualizar o
-                        resultado final antes do início da obra.
+                        A gestão da construção organiza e acompanha todas as
+                        etapas da obra. Ela controla prazos, custos e qualidade
+                        para evitar atrasos e desperdícios. Assim, garante uma
+                        execução eficiente, segura e bem planejada.
                     </p>
                 </div>
             </div>
@@ -89,26 +129,29 @@
         <section>
             <div id="wrap">
                 <div class="corpo">
-                    <h2 id="quem somos">QUEM SOMOS</h2>
-                    <div id="container-span">
-                        <span id="accent"></span>
+                    <div id="container-quem-somos">
+                        <h2 id="quem somos">QUEM SOMOS</h2>
+                        <div id="container-span">
+                            <span id="accent"></span>
+                        </div>
                     </div>
 
                     <p>
-                        Sou um parágrafo. Clique aqui para editar e adicionar o
-                        seu próprio texto. É fácil! Basta clicar em "Editar
-                        Texto" ou clicar duas vezes sobre mim e você poderá
-                        adicionar o seu próprio conteúdo e trocar fontes.
-                        Sinta-se à vontade para arrastar-me e soltar em qualquer
-                        lugar em sua página. Sou um ótimo lugar para você contar
-                        sua história e permitir que seus clientes saibam um
-                        pouco mais sobre você. Este é um ótimo espaço para
-                        escrever um texto longo sobre a sua empresa e seus
-                        serviços. Fale sobre a sua equipe e sobre os serviços
-                        prestados por você. Conte aos seus visitantes sobre como
-                        teve a idéia de iniciar o seu negócio e o que o torna
-                        diferente de seus competidores. Faça com que sua empresa
-                        se destaque e mostre quem você é.
+                        Somos a ESFERA CONSTRUÇÃO, uma empresa especializada no
+                        setor da construção civil, dedicada a transformar
+                        projetos em obras sólidas, seguras e bem planejadas.
+                        Atuamos com responsabilidade desde a fase inicial até a
+                        entrega final, sempre priorizando organização, qualidade
+                        técnica e atenção aos detalhes. Nossa equipe é formada
+                        por profissionais qualificados, comprometidos com
+                        prazos, segurança no canteiro de obras e o uso correto
+                        de materiais, garantindo durabilidade e eficiência em
+                        cada projeto executado. Trabalhamos com transparência e
+                        comunicação clara, acreditando que a confiança é a base
+                        de qualquer boa parceria. Nosso objetivo é oferecer
+                        soluções práticas e inteligentes, entregando construções
+                        que unam funcionalidade, resistência e um acabamento bem
+                        executado, superando as expectativas de cada cliente.
                     </p>
                 </div>
                 <div id="image"></div>
@@ -117,12 +160,12 @@
         <aside>
             <div id="caixa-corpo">
                 <div id="caixaI" class="caixa">
-                    <h2>2035</h2>
+                    <h2>2024</h2>
                     <p id="Ano">Ano</p>
                     <p>Fundado</p>
                 </div>
                 <div class="containe-linha">
-                    <span id="linha"> </span>
+                    <span id="linha1"> </span>
                 </div>
                 <div id="caixaII" class="caixa">
                     <h2>206</h2>
@@ -153,9 +196,7 @@
             </div>
             <div id="corpoII">
                 <div class="projct">
-                    <a href="indexI.html" target="_"
-                        ><img src="img/projetos/project0I.avif" alt="projectI"
-                    /></a>
+                    <img src="img/projetos/project0I.avif" alt="projectI" />
                 </div>
                 <div class="projct">
                     <img src="img/projetos/project0II.avif" alt="projectII" />
@@ -177,31 +218,33 @@
                 <spam id="accent"></spam>
             </div>
             <div class="cliente">
-                <div class="foto">
-                    <img
-                        id="pb"
-                        src="img/foto-clientes/tripopreto.avif"
-                        alt="tripox"
-                    />
-                    <img
-                        id="cor"
-                        src="img/foto-clientes/tripo-com-cor.avif"
-                        alt="tripox"
-                    />
+                <div class="imgI">
+                    <div class="foto">
+                        <img
+                            id="pb"
+                            src="img/foto-clientes/tripopreto.avif"
+                            alt="tripox"
+                        />
+                        <img
+                            id="cor"
+                            src="img/foto-clientes/tripo-com-cor.avif"
+                            alt="tripox"
+                        />
+                    </div>
+                    <div class="foto">
+                        <img
+                            id="pb"
+                            src="img/foto-clientes/excipia-preto.avif"
+                            alt="excipia-sem-cor"
+                        />
+                        <img
+                            id="cor"
+                            src="img/foto-clientes/excipia-com-cor.avif"
+                            alt="excipia-com-cor"
+                        />
+                    </div>
                 </div>
-                <div class="foto">
-                    <img
-                        id="pb"
-                        src="img/foto-clientes/excipia-preto.avif"
-                        alt="excipia-sem-cor"
-                    />
-                    <img
-                        id="cor"
-                        src="img/foto-clientes/excipia-com-cor.avif"
-                        alt="excipia-com-cor"
-                    />
-                </div>
-                <div class="foto">
+                <div class="fotoIII">
                     <img
                         id="pb"
                         src="img/foto-clientes/vide-preto.avif"
@@ -213,29 +256,31 @@
                         alt="vid-com-cor"
                     />
                 </div>
-                <div class="foto">
-                    <img
-                        id="pb"
-                        src="img/foto-clientes/hotel-preto.avif"
-                        alt="Dehotel-sem-cor"
-                    />
-                    <img
-                        id="cor"
-                        src="img/foto-clientes/hotel-com-cor.avif"
-                        alt="Dehotel-com-cor"
-                    />
-                </div>
-                <div class="foto">
-                    <img
-                        id="pb"
-                        src="img/foto-clientes/unber-preto.avif"
-                        alt="UMBER-SEM-COR"
-                    />
-                    <img
-                        id="cor"
-                        src="img/foto-clientes/unber-com-cor.avif"
-                        alt="UMBER-com-cor"
-                    />
+                <div class="imgI">
+                    <div class="foto">
+                        <img
+                            id="pb"
+                            src="img/foto-clientes/hotel-preto.avif"
+                            alt="Dehotel-sem-cor"
+                        />
+                        <img
+                            id="cor"
+                            src="img/foto-clientes/hotel-com-cor.avif"
+                            alt="Dehotel-com-cor"
+                        />
+                    </div>
+                    <div class="foto">
+                        <img
+                            id="pb"
+                            src="img/foto-clientes/unber-preto.avif"
+                            alt="UMBER-SEM-COR"
+                        />
+                        <img
+                            id="cor"
+                            src="img/foto-clientes/unber-com-cor.avif"
+                            alt="UMBER-com-cor"
+                        />
+                    </div>
                 </div>
             </div>
         </figure>
@@ -247,14 +292,102 @@
             <div id="map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.9025972976942!2d-46.645727324669565!3d-23.571941478792546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5997bb6d25dd%3A0xc0989337a3466583!2sAv.%20Bernardino%20de%20Campos%2C%2098%20-%20Para%C3%ADso%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004004-040!5e0!3m2!1spt-BR!2sbr!4v1767479989122!5m2!1spt-BR!2sbr"
-                    width="920"
-                    height="350"
+                    width="970"
+                    height="370"
                     style="border: 0"
                     allowfullscreen=""
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
             </div>
+            <div id="container">
+                <section id="formulario">
+                    <h2>Informações</h2>
+                    <p>
+                        Para qualquer informação, dúvida ou comentário, por
+                        favor ligue: (11) 3456-7890. Ou preencha o formulário:
+                    </p>
+                    <form
+                        action="mailto:info@meusite.com"
+                        method="post"
+                        enctype="text/plain"
+                    >
+                        <label>Nome</label>
+                        <input type="text" />
+                        <label>Sobrenome</label>
+                        <input type="text" />
+                        <label>Email *</label>
+                        <input type="email" required />
+                        <label>Telefone</label>
+                        <input type="tel" />
+                        <label>Deixe-nos uma mensagem...</label>
+                        <textarea></textarea>
+                        <div id="button">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </section>
+                <div id="info">
+                    <div class="bloco">
+                        <h2>Matriz</h2>
+                        <p>
+                            Av. Bernardino de Campos, 98<br />
+                            São Paulo, SP 12345-678
+                        </p>
+                        <p id="p3">
+                            suporte@esferaconstrucao.com<br />
+                            Tel: (11) 3456-7890<br />
+                            Fax: (11) 3456-7890
+                        </p>
+                    </div>
+                    <div class="bloco">
+                        <h2>Carreiras</h2>
+                        <p>
+                            Para trabalhar conosco, envie seu currículo para:<br />
+                            suporte@esferaconstrucao.com
+                        </p>
+                    </div>
+                    <div id="orcamento">
+                        <span id="accent"></span>
+                        <h2>Orçamento: (11) 3456-7890</h2>
+                    </div>
+                </div>
+            </div>
         </article>
+        <footer>
+            <div id="footer">
+                <p>Esfera Construção | Construção Civil</p>
+                <p>
+                    Contato: (11) 3456-7890 |
+                    <a href="mailto:contato@esferaconstrucao.com"
+                        >suporte@esferaconstrucao.com
+                    </a>
+                </p>
+                <p>© 2026 Esfera Construção – Todos os direitos reservados</p>
+
+                <p>
+                    Desenvolvido por
+                    <a
+                        href="https://github.com/mateusgoncalves2008?tab=repositories"
+                        >Mateus Gonçalves dos Santos</a
+                    >
+                </p>
+            </div>
+            <div id="icons">
+                <a
+                    href="https://www.instagram.com/mateus_goncalves.s/"
+                    target="_blank"
+                    ><img src="img/Icons/Instagram.png" alt="Instagram"
+                /></a>
+                <a
+                    href="https://github.com/mateusgoncalves2008?tab=repositories"
+                    target="_blank"
+                    ><img
+                        src="img/Icons/Gitidjdjdjdjdj-removebg-preview.png"
+                        alt="GitHub"
+                /></a>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
     </body>
 </html>
