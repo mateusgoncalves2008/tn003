@@ -960,18 +960,23 @@ footer {
     }
 
     figure {
+        height: 50%;
         .cliente {
-            gap: 1rem;
+            flex-direction: column;
 
             .imgI {
-               
+                flex-direction: row;
+                margin: 0%;
+                padding: 0%;
             }
         }
 
         .fotoIII {
+            background-color: rgb(128, 0, 255);
             flex-direction: row;
-            width: 70px;
-            height: 70px;
+            width: 50%;
+            height: 100%;
+            margin: 0px;
         }
 
         .foto {
