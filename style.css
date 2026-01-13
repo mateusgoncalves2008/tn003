@@ -22,15 +22,15 @@
     padding: 0;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 * {
     box-sizing: border-box;
     .who {
         width: 100%;
     }
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 html,
@@ -285,13 +285,12 @@ section {
         display: flex;
         font-size: 3.8rem;
         padding: 3.3rem 2.3rem 0rem 0rem;
-        letter-spacing: 2px;
+        letter-spacing: 1.3px;
         font-family: "Avenir grosso";
     }
 
     #container-span {
         display: flex;
-        width: 25%;
     }
 
     #accent {
@@ -460,10 +459,7 @@ figure {
     .cliente {
         display: flex;
         justify-content: center;
-
-        .imgI {
-            display: flex;
-        }
+        gap: 2.5rem;
     }
 
     #fotoIIIIII {
@@ -860,13 +856,13 @@ footer {
             }
         }
 
-        .corpo h2 {
-            justify-content: center;
-            font-size: 37px;
-            padding: 3rem 10px 0px 20px;
-        }
-
         #container-quem-somos {
+            h2 {
+                justify-content: center;
+                font-size: 38px;
+                padding: 3rem 10px 0px 20px;
+            }
+
             #container-span {
                 width: 50%;
             }
@@ -911,21 +907,20 @@ footer {
             #accent {
                 width: 6rem;
                 height: 8px;
+                margin-bottom: 2.5rem;
             }
         }
 
         #corpoII {
             grid-template-columns: auto;
-            align-items: center;
-            justify-content: center;
             gap: 1rem;
             width: 90.5%;
-            padding: 0rem 2rem 3rem 1rem;
+            padding: 15px;
+            padding-bottom: 3rem;
 
             .projct {
-                margin-bottom: 0%;
                 & img {
-                    width: 107%;
+                    width: 100%;
                 }
             }
         }
@@ -948,15 +943,16 @@ footer {
         .cliente {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-        }
+            gap: 0;
+            
+            #fotoIIIIII {
+                display: flex;
+            }
 
-        #fotoIIIIII {
-            display: flex;
-        }
-
-        .foto {
-            width: 70px;
-            height: 70px;
+            .foto {
+                width: 70px;
+                height: 70px;
+            }
         }
     }
 
@@ -971,6 +967,11 @@ footer {
                 font-size: 2.4rem;
                 padding: 3rem 0rem 0rem 0rem;
             }
+
+            #accent {
+                width: 7.5rem;
+                margin: 1rem 0rem 3.5rem 0rem;
+            }
         }
 
         #formulario {
@@ -979,6 +980,7 @@ footer {
 
         #map {
             width: 100%;
+            height: 50%;
         }
 
         input,
@@ -1017,7 +1019,7 @@ footer {
     }
 }
 
-@media (max-width: 374px) {
+@media (min-width: 321px) and (max-width: 426px) {
     #nav-header {
         justify-content: space-between;
         width: 100%;
@@ -1215,23 +1217,21 @@ footer {
 
         #corpoII {
             grid-template-columns: auto;
-            align-items: center;
-            justify-content: center;
             gap: 1rem;
             width: 90.5%;
-            padding: 0rem 2rem 3rem 1rem;
+            padding: 0.5px;
 
             .projct {
-                margin-bottom: 0%;
                 & img {
-                    width: 107%;
+                    width: 100%;
                 }
             }
         }
     }
 
     figure {
-        height: 50%;
+        height: auto;
+        padding-bottom: 1rem;
 
         #a {
             h2 {
@@ -1241,12 +1241,14 @@ footer {
             #accent {
                 width: 5.5rem;
                 height: 8px;
-                margin: 10px 15px 0px 0px;
+                margin: 10px auto;
             }
         }
         .cliente {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 2fr);
+            justify-items: center;
+            gap: 0;
         }
 
         #fotoIIIIII {
@@ -1274,15 +1276,18 @@ footer {
 
         #formulario {
             width: 100%;
+            max-width: 100vh;
         }
 
-        #map {
-            width: 100%;
+        #map iframe {
+            width: 100% !important;
+            max-width: 100vw;
         }
 
         input,
         textarea {
-            width: 100%;
+            width: 100% !important;
+            box-sizing: border-box;
         }
 
         #button {
