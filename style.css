@@ -36,10 +36,6 @@
     }
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 html,
 body {
     height: 100%;
@@ -762,7 +758,7 @@ footer {
     }
 
     #link-nav.nav-links {
-        display: none;
+        display: flex;
         position: fixed;
         flex-direction: column;
         justify-content: center;
@@ -773,10 +769,16 @@ footer {
         height: 100vh;
         background-color: #1e2d3b;
         z-index: 2000;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(50px);
+        transition: opacity 0.6s ease, transform 0.6s ease, visibility 0.6s;
     }
 
     #link-nav.nav-links.active {
-        display: flex;
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
     }
 
     #link-nav a {
@@ -885,7 +887,7 @@ footer {
             }
 
             #accent {
-                width: 6.9rem;
+                width: 6rem;
                 height: 8px;
                 margin: 20px 0px 30px 20px;
             }
@@ -1097,22 +1099,27 @@ footer {
     }
 
     #link-nav.nav-links {
-        display: none;
+        display: flex;
         position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         top: 0;
-        left: 0;
         right: 0;
         width: 100%;
         height: 100vh;
         background-color: #1e2d3b;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         z-index: 2000;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(50px);
+        transition: opacity 0.6s ease, transform 0.6s ease, visibility 0.6s;
     }
 
     #link-nav.nav-links.active {
-        display: flex;
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
     }
 
     #link-nav a {
@@ -1431,22 +1438,27 @@ footer {
     }
 
     #link-nav.nav-links {
-        display: none;
+        display: flex;
         position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         top: 0;
-        left: 0;
         right: 0;
         width: 100%;
         height: 100vh;
         background-color: #1e2d3b;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         z-index: 2000;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(50px);
+        transition: opacity 0.6s ease, transform 0.6s ease, visibility 0.6s;
     }
 
     #link-nav.nav-links.active {
-        display: flex;
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
     }
 
     #link-nav a {
