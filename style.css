@@ -215,6 +215,7 @@ nav {
     }
 
     h3 {
+        display: flex;
         padding: 2rem 0rem 1rem 25px;
         color: var(--cor4);
         font-family: "Avenir grosso";
@@ -773,7 +774,10 @@ footer {
         opacity: 0;
         visibility: hidden;
         transform: translateX(50px);
-        transition: opacity 0.6s ease, transform 0.6s ease, visibility 0.6s;
+        transition:
+            opacity 0.6s ease,
+            transform 0.6s ease,
+            visibility 0.6s;
     }
 
     #link-nav.nav-links.active {
@@ -1114,7 +1118,10 @@ footer {
         opacity: 0;
         visibility: hidden;
         transform: translateX(50px);
-        transition: opacity 0.6s ease, transform 0.6s ease, visibility 0.6s;
+        transition:
+            opacity 0.6s ease,
+            transform 0.6s ease,
+            visibility 0.6s;
     }
 
     #link-nav.nav-links.active {
@@ -1453,7 +1460,10 @@ footer {
         opacity: 0;
         visibility: hidden;
         transform: translateX(50px);
-        transition: opacity 0.6s ease, transform 0.6s ease, visibility 0.6s;
+        transition:
+            opacity 0.6s ease,
+            transform 0.6s ease,
+            visibility 0.6s;
     }
 
     #link-nav.nav-links.active {
@@ -1738,7 +1748,7 @@ footer {
     }
 }
 
-@media (min-width: 516px) and (max-width: 600px) {
+@media (min-width: px) and (max-width: px) {
     #nav-header {
         justify-content: space-between;
         width: 100%;
@@ -1793,7 +1803,10 @@ footer {
         opacity: 0;
         visibility: hidden;
         transform: translateX(50px);
-        transition: opacity 0.6s ease, transform 0.6s ease, visibility 0.6s;
+        transition:
+            opacity 0.6s ease,
+            transform 0.6s ease,
+            visibility 0.6s;
     }
 
     #link-nav.nav-links.active {
@@ -1864,38 +1877,44 @@ footer {
             }
         }
 
+        h3 {
+            font-size: 1.5rem;
+            max-width: 50%;
+        }
+
         p {
             padding: 0px 25px 12px 25px;
             max-width: 100%;
+            font-size: 20px;
         }
 
         #fotos {
             flex-direction: column;
-            padding: 1rem 10rem 4rem 10rem;
+            padding: 1rem 3rem 4rem 3rem;
             gap: 1.5rem;
         }
 
         img {
-            height: 20rem;
+            height: 24rem;
         }
     }
 
     section {
         width: 100%;
-        height: 110%;
+        height: 120%;
 
         .corpo {
             align-items: start;
 
             p {
                 max-width: 80%;
-                font-size: 15px;
+                font-size: 18px;
                 margin: 0px 20px 50px 20px;
             }
 
             h2 {
                 justify-content: center;
-                font-size: 40px;
+                font-size: 4rem;
                 padding: 3rem 20px 0px 20px;
             }
         }
@@ -1906,9 +1925,18 @@ footer {
             }
 
             #accent {
-                width: 6.9rem;
+                width: 7.6rem;
                 height: 8px;
-                margin: 10px 20px 40px 20px;
+                margin: 10px 20px 40px 25px;
+            }
+        }
+
+        #wrap {
+            flex-direction: column-reverse;
+
+            #image {
+                width: 100%;
+                height: 100%;
             }
         }
     }
@@ -1917,7 +1945,6 @@ footer {
         padding: 20px 30px;
 
         & #caixa-corpo {
-            display: flex;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
 
@@ -1927,6 +1954,26 @@ footer {
 
             p {
                 font-size: 1.5rem;
+            }
+
+            #caixaII {
+                h2 {
+                    max-width: 83%;
+                }
+
+                p {
+                    max-width: 83%;
+                }
+            }
+
+            #caixaIIII {
+                h2 {
+                    max-width: 83%;
+                }
+
+                p {
+                    max-width: 83%;
+                }
             }
         }
 
@@ -1940,17 +1987,17 @@ footer {
         #cabecaII {
             h2 {
                 padding: 3rem 0rem 1rem 0rem;
-                font-size: 3rem;
+                font-size: 4rem;
             }
             #accent {
-                width: 8rem;
+                width: 11rem;
                 height: 8px;
             }
         }
 
         #corpoII {
             grid-template-columns: auto;
-            gap: 1rem;
+            gap: 1.5rem;
             width: 90.5%;
             padding: 0px 10px 50px 10px;
 
@@ -1964,15 +2011,15 @@ footer {
 
     figure {
         height: auto;
-        padding-bottom: 1rem;
+        padding-bottom: 0rem;
 
         #a {
             h2 {
-                font-size: 3rem;
+                font-size: 4rem;
             }
 
             #accent {
-                width: 7.7rem;
+                width: 8.5rem;
                 height: 8px;
                 margin: 10px auto;
             }
@@ -1980,15 +2027,17 @@ footer {
         .cliente {
             justify-items: center;
             gap: 0.5rem;
+            display: grid;
+            grid-template-columns: repeat(3, 2fr);
         }
 
         #fotoIIIIII {
-            display: none;
+            display: block;
         }
 
         .foto {
-            width: 9rem;
-            height: 7rem;
+            width: 10rem;
+            height: 10rem;
         }
 
         .foto #cor {
@@ -2012,12 +2061,12 @@ footer {
 
         #b {
             h2 {
-                font-size: 3rem;
+                font-size: 4rem;
                 padding: 3rem 0rem 0rem 0rem;
             }
 
             #accent {
-                width: 8rem;
+                width: 9rem;
             }
         }
 
@@ -2076,7 +2125,7 @@ footer {
     }
 }
 
-@media (min-width: px) and (max-width: 900px) {
+@media (min-width: px) and (max-width: 1000px) {
     #nav-header {
         justify-content: space-between;
         width: 100%;
@@ -2131,7 +2180,10 @@ footer {
         opacity: 0;
         visibility: hidden;
         transform: translateX(50px);
-        transition: opacity 0.6s ease, transform 0.6s ease, visibility 0.6s;
+        transition:
+            opacity 0.6s ease,
+            transform 0.6s ease,
+            visibility 0.6s;
     }
 
     #link-nav.nav-links.active {
