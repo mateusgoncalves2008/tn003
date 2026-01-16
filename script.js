@@ -50,7 +50,7 @@ menuLinks.forEach((link) => {
 
         if (targetElement) {
             const targetPosition = targetElement.offsetTop - 96;
-            smoothScrollTo(0, targetPosition, 2500);
+            smoothScrollTo(0, targetPosition, 2000);
         }
     });
 });
