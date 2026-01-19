@@ -24,6 +24,7 @@ function smoothScrollTo(endX, endY, duration) {
     const startTime = new Date().getTime();
 
     duration = typeof duration !== "undefined" ? duration : 400;
+
     const easeInOutQuart = (time, from, distance, duration) => {
         if ((time /= duration / 2) < 1)
             return (distance / 2) * time * time * time * time + from;
@@ -40,6 +41,7 @@ function smoothScrollTo(endX, endY, duration) {
         window.scroll(newX, newY);
     }, 1000 / 60);
 }
+
 const menuLinks = document.querySelectorAll('#link-nav a[href^="#"]');
 
 menuLinks.forEach((link) => {
@@ -50,7 +52,8 @@ menuLinks.forEach((link) => {
 
         if (targetElement) {
             const targetPosition = targetElement.offsetTop - 96;
-            smoothScrollTo(0, targetPosition, 2000);
+
+            smoothScrollTo(0, targetPosition, 2500);
         }
     });
 });

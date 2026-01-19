@@ -136,6 +136,7 @@ nav {
 }
 
 .bg-video {
+    display: flex;
     position: fixed;
     inset: 0;
     overflow: hidden;
@@ -182,7 +183,7 @@ nav {
 
 #articleI {
     background-color: var(--cor3);
-    height: 112%;
+    height: auto;
     width: 100%;
 
     #c {
@@ -227,14 +228,14 @@ nav {
         display: flex;
         font-family: "Raleway";
         padding: 0px 25px 12px 25px;
-        max-width: 83%;
+        max-width: 100%;
         line-height: 1.6em;
     }
 
     & img {
         display: flex;
         height: 15rem;
-        width: 100%;
+        width: auto;
         border-radius: 7px 7px 0px 0px;
     }
 
@@ -243,6 +244,7 @@ nav {
         justify-content: center;
         padding: 0% 18%;
         gap: 1.5rem;
+        padding-bottom: 5rem;
     }
 
     #foto-um {
@@ -860,6 +862,10 @@ footer {
             max-width: 100%;
         }
 
+        img {
+            width: 100%;
+        }
+
         #fotos {
             flex-direction: column;
             padding: 0px 20px 40px 20px;
@@ -1197,6 +1203,10 @@ footer {
         p {
             padding: 0px 25px 12px 25px;
             max-width: 100%;
+        }
+
+        img {
+            width: 100%;
         }
 
         #fotos {
@@ -1542,8 +1552,9 @@ footer {
             max-width: 100%;
         }
 
-        img {
+        & img {
             height: 19rem;
+            width: 100%;
         }
 
         #fotos {
@@ -1897,6 +1908,7 @@ footer {
 
         img {
             height: auto;
+            width: 100%;
         }
 
         #fotos {
@@ -2276,6 +2288,7 @@ footer {
 
         img {
             height: auto;
+            width: 100%;
         }
 
         #fotos {
@@ -2661,6 +2674,7 @@ footer {
 
         img {
             height: auto;
+            width: 100%;
         }
 
         #fotos {
@@ -2900,6 +2914,498 @@ footer {
         img:hover {
             opacity: none;
             transform: none;
+        }
+    }
+}
+
+@media (min-width: 851px) and (max-width: 1440px) {
+    #nav-header {
+        padding: 4px;
+        gap: 0.5rem;
+
+        & img {
+            width: 4rem;
+            height: 4rem;
+        }
+
+        #nav-headerI {
+            padding: 0px 1px 2px 9px;
+        }
+
+        & div {
+            display: flex;
+
+            & #cima {
+                font-size: 28px;
+                margin: 0;
+            }
+
+            & #baixo {
+                font-size: 29px;
+            }
+        }
+    }
+
+    .bg-video {
+        height: 100%;
+    }
+
+    .site-content {
+        height: 100%;
+        padding-top: 13rem;
+
+        & img {
+            height: 12%;
+            width: 9%;
+        }
+    }
+
+    .site-content h1 {
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+    }
+
+    #articleI {
+        background-color: var(--cor3);
+        height: auto;
+        width: 100%;
+
+        #accentI {
+            display: flex;
+            width: 9%;
+            margin: 1rem 0rem 3rem 0rem;
+
+            #accent {
+                display: flex;
+                width: 8rem;
+                height: 8px;
+                background: var(--cor1);
+            }
+        }
+
+        & h2 {
+            display: flex;
+            color: var(--cor2);
+            font-family: "Avenir grosso";
+            text-align: center;
+            font-size: 4rem;
+            font-weight: normal;
+            padding: 3rem 0rem 0rem 0rem;
+        }
+
+        h3 {
+            padding: 20px 30px 12px 30px;
+            font-size: 1.5rem;
+            max-width: 45%;
+        }
+
+        p {
+            padding: 0px 30px 12px 30px;
+            max-width: 75%;
+            font-size: 19px;
+            line-height: 1.6em;
+            letter-spacing: 1px;
+        }
+
+        & img {
+            height: 23rem;
+            width: 100%;
+        }
+
+        & #fotos {
+            flex-direction: column;
+            padding: 0% 20%;
+            gap: 2rem;
+            padding-bottom: 5rem;
+        }
+    }
+
+    section {
+        width: 100%;
+        height: auto;
+
+        .corpo {
+            height: 85.1%;
+            align-items: start;
+
+            p {
+                max-width: 80%;
+                line-height: 25px;
+                letter-spacing: 1px;
+                padding: 0px 0px 70px 10px;
+                margin: 0;
+            }
+        }
+
+        .corpo h2 {
+            font-size: 3.5rem;
+            padding: 3.3rem 0rem 0rem 10px;
+            letter-spacing: 1px;
+        }
+
+        #accent {
+            width: 8rem;
+            margin: 10px 0px 50px 10px;
+        }
+
+        #wrap {
+            flex-direction: column-reverse;
+
+            #image {
+                flex: auto;
+                width: 100%;
+                height: auto;
+                min-height: 25rem;
+            }
+        }
+    }
+
+    aside {
+        padding: 4rem 0rem 4rem 0rem;
+
+        & #caixa-corpo {
+            gap: 1rem;
+
+            .caixa {
+                padding: 0px 26px;
+            }
+        }
+    }
+
+    #articleII {
+        background-color: var(--cor3);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & #cabecaII {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            flex-direction: column;
+
+            h2 {
+                display: flex;
+                color: var(--cor2);
+                padding: 3rem 0rem 1rem 0rem;
+                font-size: 4rem;
+                font-family: "Avenir grosso";
+                font-weight: normal;
+            }
+            #accent {
+                display: flex;
+                width: 8rem;
+                height: 8px;
+                background: var(--cor1);
+                margin: 0rem 0rem 3rem;
+            }
+        }
+
+        #corpoII {
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            width: 70.5%;
+            margin: 0 auto;
+            padding: 3rem;
+        }
+
+        .projct {
+            display: flex;
+            & img {
+                width: 100%;
+                border-radius: 7px;
+            }
+        }
+    }
+
+    figure {
+        background-color: var(--cor5);
+        height: 47%;
+
+        #a {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            h2 {
+                text-align: center;
+                color: var(--cor2);
+                font-family: "Avenir grosso";
+                font-weight: normal;
+                font-size: 4rem;
+                padding: 3rem 0rem 0rem 0rem;
+            }
+
+            #accent {
+                width: 9rem;
+                height: 8px;
+                background: var(--cor1);
+                margin: 15px 0px 0px;
+            }
+        }
+
+        .cliente {
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+        }
+
+        #fotoIIIIII {
+            display: none;
+        }
+
+        .foto {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            z-index: 0;
+        }
+
+        .foto {
+            margin: 2rem 1rem 0rem;
+            width: 9rem;
+            height: 9rem;
+        }
+
+        .foto img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .foto #cor {
+            display: none;
+        }
+
+        .foto:hover #cor {
+            display: block;
+        }
+
+        .foto:hover #pb {
+            display: none;
+        }
+    }
+
+    #articleIII {
+        background-color: var(--cor3);
+
+        #b {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            h2 {
+                display: flex;
+                text-align: center;
+                font-family: "Avenir grosso";
+                font-weight: normal;
+                font-size: 4rem;
+                color: var(--cor2);
+                padding: 3rem 0rem 0rem 0rem;
+            }
+
+            #accent {
+                display: flex;
+                width: 9rem;
+                height: 8px;
+                background: var(--cor1);
+                margin: 15px 0px 60px;
+            }
+        }
+
+        #map {
+            display: flex;
+            justify-content: center;
+            padding: 0rem 0rem 3rem 0rem;
+        }
+    }
+
+    #container {
+        grid-template-columns: repeat(2, 2fr);
+        padding: 0% 3%;
+        gap: 5rem;
+    }
+
+    #formulario {
+        flex-direction: column;
+        width: 27rem;
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 2rem;
+            font-family: "Avenir grosso";
+            font-weight: normal;
+        }
+
+        p {
+            color: #525456;
+            margin-bottom: 2rem;
+            line-height: 1.5;
+            font-size: 17px;
+            max-width: 100%;
+            display: flex;
+            font-family: "Raleway";
+            font-weight: normal;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-style: italic;
+            color: #525456;
+        }
+
+        input,
+        textarea {
+            display: flex;
+            width: 27.5rem;
+            padding: 7px;
+            margin-bottom: 5px;
+        }
+
+        input:hover {
+            border: 2px solid #333;
+        }
+
+        textarea:hover {
+            border: 2px solid #333;
+        }
+
+        textarea {
+            height: 8rem;
+            resize: none;
+        }
+
+        #button {
+            display: flex;
+            justify-content: right;
+            padding-bottom: 2rem;
+
+            button {
+                font-family: "Avenir grosso";
+                font-weight: normal;
+                background: #333;
+                color: #eacc23;
+                padding: 4px 30px;
+                font-size: 1rem;
+                border: 0px solid var(--cor6);
+                transition: 0.5s ease-in-out;
+            }
+
+            button:hover {
+                background: var(--cor1);
+                color: var(--cor6);
+                border: 0px solid var(--cor6);
+                transition: 0.5s ease-in-out;
+            }
+        }
+    }
+
+    #info {
+        background-color: var(--cor3);
+        align-items: center;
+
+        h2 {
+            display: flex;
+            font-size: 28px;
+            margin-bottom: 2rem;
+            font-family: "Avenir grosso";
+            font-weight: normal;
+        }
+
+        p {
+            display: flex;
+            color: #525456;
+            line-height: 1.5;
+            font-family: "Raleway";
+            font-weight: normal;
+            max-width: 70%;
+            font-size: 17px;
+        }
+
+        #p3 {
+            padding: 2rem 0rem 0rem 0rem;
+        }
+
+        .bloco {
+            margin-bottom: 35px;
+        }
+
+        #orcamento {
+            #accent {
+                display: block;
+                width: 60px;
+                height: 8px;
+                background: var(--cor1);
+                margin-bottom: 15px;
+            }
+
+            strong {
+                font-size: 28px;
+                display: block;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    footer {
+        background-color: #111;
+        color: #ccc;
+        padding: 40px 20px;
+        text-align: center;
+        font-family: "Raleway", sans-serif;
+
+        #footer {
+            max-width: 900px;
+            margin: 0 auto;
+
+            p {
+                margin: 8px 0;
+                font-size: 14px;
+                line-height: 1.6;
+
+                p:first-child {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: var(--cor3);
+                }
+            }
+
+            a {
+                color: #eacc23;
+                text-decoration: none;
+            }
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #icons {
+            margin-top: 20px;
+
+            a {
+                margin: 0 8px;
+            }
+        }
+
+        img {
+            width: 28px;
+            opacity: 0.8;
+            transition: 0.3s;
+        }
+
+        img:hover {
+            opacity: 2;
+            transform: scale(1.09);
         }
     }
 }
