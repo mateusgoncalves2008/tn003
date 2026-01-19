@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "Avenir grosso";
+    src: url("font/avenir-similar-fonts/avenir-similar-fonts/TT-Norms-Font/TT-Norms-Medium.otf")
+        format(opentype);
+}
+
+@font-face {
+    font-family: "Avenir fino";
+    src: url("font/avenir-similar-fonts/avenir-similar-fonts/TT-Norms-Font/TT-Norms-Regular.otf")
+        format(opentype);
+}
+
+@font-face {
+    font-family: " Avenir finoI ";
+    src: url("font/avenir-similar-fonts/avenir-similar-fonts/TT-Norms-Font/TT-Norms-Thin.otf")
+        format(opentype);
+}
+
+* {
+    --cor1: #eacc23;
+    --cor2: #1e2d3b;
+    --cor3: #fff;
+    --cor4: #3d5975;
+    --cor5: #f7f7f7;
+    --cor6: #333;
+    --cor7: rgb(0, 0, 0);
+}
+
+
+
+.carrossel-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0rem 0rem 0rem 6rem;
+}
+
+.slide {
+    display: none;
+    animation: fade 0.5s;
+}
+
+.texto {
+    padding: 9rem 0rem 0rem 14rem;
+
+    h2 {
+        font-size: 3rem;
+        font-family: "Avenir grosso";
+        font-weight: normal;
+        margin: 0;
+        padding-bottom: 3rem;
+    }
+
+    a {
+        font-family: " Avenir finoI ";
+        font-weight: bold;
+        color: var(--cor2);
+    }
+
+    a:hover {
+        color: var(--cor2);
+    }
+}
+
+.slide.ativo {
+    display: flex;
+}
+
+.slide img {
+    padding: 7rem 0rem 0rem 10rem;
+    width: 60%;
+    height: 60%;
+}
+
+.botao-nav {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: var(--cor2);
+    font-size: 2.5rem;
+    border: none;
+    background: none;
+    transition: 0s;
+}
+
+.proximo {
+    right: 0;
+}
+
+.anterior {
+    left: 0;
+}
+
+
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
