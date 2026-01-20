@@ -1,0 +1,165 @@
+@font-face {
+    font-family: "Avenir grosso";
+    src: url("font/avenir-similar-fonts/avenir-similar-fonts/TT-Norms-Font/TT-Norms-Medium.otf")
+        format(opentype);
+}
+
+@font-face {
+    font-family: "Avenir fino";
+    src: url("font/avenir-similar-fonts/avenir-similar-fonts/TT-Norms-Font/TT-Norms-Regular.otf")
+        format(opentype);
+}
+
+@font-face {
+    font-family: "Avenir finoI";
+    src: url("font/avenir-similar-fonts/avenir-similar-fonts/TT-Norms-Font/TT-Norms-Thin.otf")
+        format(opentype);
+}
+
+* {
+    --cor1: #eacc23;
+    --cor2: #1e2d3b;
+    --cor3: #fff;
+    --cor4: #3d5975;
+    --cor5: #f7f7f7;
+    --cor6: #333;
+    --cor7: rgb(0, 0, 0);
+}
+
+#servicos,
+#quem-somos,
+#projetos,
+#articleIII {
+    scroll-margin-top: 96px;
+}
+
+body {
+    margin: 0;
+}
+
+article {
+    background-color: var(--cor5);
+
+    #header {
+        h1 {
+            color: var(--cor2);
+            font-family: "Avenir grosso";
+            font-weight: bold;
+            line-height: 1.6em;
+            font-size: 3.5rem;
+            padding: 4rem 0rem 0rem 18rem;
+            margin: 0;
+        }
+
+        #accent {
+            display: flex;
+            background-color: var(--cor1);
+            width: 8rem;
+            height: 9px;
+        }
+
+        #container-span {
+            padding: 0rem 0rem 4rem 18rem;
+        }
+    }
+}
+
+section {
+    background-color: var(--cor3);
+
+    #corpo {
+        display: flex;
+        justify-content: center;
+        padding-top: 4rem;
+
+        p {
+            color: rgba(46, 46, 46, 0.885);
+            display: flex;
+            font-family: "Avenir fino";
+            font-weight: normal;
+            letter-spacing: 1px;
+            line-height: 1.5rem;
+            max-width: 25%;
+            padding-right: 2rem;
+            padding-bottom: 30px;
+            margin: 0;
+        }
+    }
+}
+
+#button {
+    padding-bottom: 10rem;
+    padding-left: 18rem;
+
+    button {
+        width: auto;
+        border: 0px solid var(--cor6);
+        background: #333;
+        color: #eacc23;
+        transition: 0.7s ease-in-out;
+        font-family: "Avenir grosso";
+        font-weight: normal;
+        padding: 11px 20px;
+        font-size: 1rem;
+    }
+
+    button:hover {
+        background: var(--cor1);
+        color: var(--cor6);
+        border: 0px solid var(--cor6);
+        transition: 0.5s ease-in-out;
+    }
+}
+
+footer {
+    background-color: #111;
+    color: #ccc;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+
+    #footer {
+        max-width: 900px;
+        margin: 0 auto;
+
+        p {
+            margin: 8px 0;
+            font-size: 14px;
+            line-height: 1.6;
+
+            p:first-child {
+                font-size: 16px;
+                font-weight: 600;
+                color: var(--cor3);
+            }
+        }
+
+        a {
+            color: #eacc23;
+            text-decoration: none;
+        }
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    #icons {
+        margin-top: 20px;
+
+        a {
+            margin: 0 8px;
+        }
+    }
+
+    img {
+        width: 28px;
+        opacity: 0.8;
+        transition: 0.3s;
+    }
+
+    img:hover {
+        opacity: 2;
+        transform: scale(1.09);
+    }
+}
