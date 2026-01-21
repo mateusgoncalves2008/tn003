@@ -1,0 +1,304 @@
+@font-face {
+    font-family: "Avenir grosso";
+    src: url("font/avenir-similar-fonts/avenir-similar-fonts/TT-Norms-Font/TT-Norms-Medium.otf")
+        format(opentype);
+}
+
+@font-face {
+    font-family: "Avenir fino";
+    src: url("font/avenir-similar-fonts/avenir-similar-fonts/TT-Norms-Font/TT-Norms-Regular.otf")
+        format(opentype);
+}
+
+@font-face {
+    font-family: "Avenir finoI";
+    src: url("font/avenir-similar-fonts/avenir-similar-fonts/TT-Norms-Font/TT-Norms-Thin.otf")
+        format(opentype);
+}
+
+* {
+    --cor1: #eacc23;
+    --cor2: #1e2d3b;
+    --cor3: #fff;
+    --cor4: #3d5975;
+    --cor5: #f7f7f7;
+    --cor6: #333;
+    --cor7: rgb(0, 0, 0);
+}
+
+#servicos,
+#quem-somos,
+#projetos,
+#articleIII {
+    scroll-margin-top: 96px;
+}
+
+body {
+    margin: 0;
+}
+
+#nav-header {
+    display: flex;
+    background-color: var(--cor1);
+    padding: 12.7px;
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+
+    & a {
+        color: var(--cor2);
+        text-decoration: none;
+    }
+
+    & img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    #nav-headerI {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        padding: 0 10px;
+    }
+
+    & div {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+
+        & #cima {
+            display: flex;
+            font-size: 30px;
+            margin: 0;
+            font-family: "Avenir grosso";
+            font-weight: normal;
+        }
+
+        & #baixo {
+            display: flex;
+            font-size: 30px;
+            font-family: "Avenir finoI";
+            margin: 0;
+            font-weight: bold;
+        }
+    }
+}
+
+#menu-notebook,
+#closse-menu {
+    display: none;
+}
+
+nav {
+    background-color: var(--cor2);
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 6rem;
+    z-index: 10;
+}
+
+#link-nav {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+
+    & a {
+        color: var(--cor3);
+        text-decoration: none;
+        padding: 0 25px;
+        font-size: 14px;
+        font-family: "Avenir finoI";
+        font-weight: bold;
+    }
+
+    & a:hover {
+        color: var(--cor1);
+        transition: 0.4s ease-in-out;
+    }
+}
+
+article {
+    background-color: var(--cor5);
+
+    #header {
+        h1 {
+            color: var(--cor2);
+            font-family: "Avenir grosso";
+            font-weight: bold;
+            line-height: 1.6em;
+            font-size: 3.5rem;
+            padding: 8rem 0rem 0rem 19rem;
+            margin: 0;
+        }
+
+        #accent {
+            display: flex;
+            background-color: var(--cor1);
+            width: 8rem;
+            height: 9px;
+        }
+
+        #container-span {
+            padding: 0rem 0rem 4rem 19rem;
+        }
+    }
+}
+
+section {
+    background-color: var(--cor3);
+
+    #corpo {
+        display: flex;
+        justify-content: center;
+        padding-top: 4rem;
+
+        p {
+            color: rgba(0, 0, 0, 0.885);
+            display: flex;
+            font-family: "Avenir finoI";
+            font-weight: bold;
+            letter-spacing: 1px;
+            line-height: 1.5rem;
+            max-width: 25%;
+            padding-right: 2rem;
+            padding-bottom: 30px;
+            margin: 0;
+        }
+        .slideshow-container {
+            max-width: 500px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slides-wrapper {
+            display: flex;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            width: 100%;
+        }
+
+        .slides-wrapper img {
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 0 10px;
+            padding-bottom: 3px;
+            color: white;
+            font-weight: 100;
+            font-size: 30px;
+            margin: 0px 11px 0px 11px;
+            background-color: rgba(0, 0, 0, 0.312);
+            text-decoration: none;
+            z-index: 1;
+        }
+
+        .next {
+            right: 0;
+        }
+        .prev {
+            left: 0;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.363);
+        }
+    }
+}
+
+#button {
+    padding-bottom: 10rem;
+    padding-left: 18rem;
+
+    button {
+        width: auto;
+        border: 0px solid var(--cor6);
+        background: #333;
+        color: #eacc23;
+        transition: 0.7s ease-in-out;
+        font-family: "Avenir grosso";
+        font-weight: normal;
+        padding: 11px 20px;
+        font-size: 1rem;
+    }
+
+    button:hover {
+        background: var(--cor1);
+        color: var(--cor6);
+        border: 0px solid var(--cor6);
+        transition: 0.5s ease-in-out;
+    }
+}
+
+footer {
+    background-color: #111;
+    color: #ccc;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+
+    #footer {
+        max-width: 900px;
+        margin: 0 auto;
+
+        p {
+            margin: 8px 0;
+            font-size: 14px;
+            line-height: 1.6;
+
+            p:first-child {
+                font-size: 16px;
+                font-weight: 600;
+                color: var(--cor3);
+            }
+        }
+
+        a {
+            color: #eacc23;
+            text-decoration: none;
+        }
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    #icons {
+        margin-top: 20px;
+
+        a {
+            margin: 0 8px;
+        }
+    }
+
+    img {
+        width: 28px;
+        opacity: 0.8;
+        transition: 0.3s;
+    }
+
+    img:hover {
+        opacity: 2;
+        transform: scale(1.09);
+    }
+}
+
+@keyframes fadeAnim {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -26,12 +26,15 @@
     --cor7: rgb(0, 0, 0);
 }
 
-
-
 .carrossel-container {
     position: relative;
     max-width: 800px;
     margin: 0rem 0rem 0rem 6rem;
+}
+
+#img-X {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .slide {
@@ -40,19 +43,19 @@
 }
 
 .texto {
-    padding: 9rem 0rem 0rem 14rem;
+    padding: 6rem 0rem 0rem 8rem;
 
     h2 {
         font-size: 3rem;
-        font-family: "Avenir grosso";
-        font-weight: normal;
         margin: 0;
         padding-bottom: 3rem;
+        font-family: "Avenir grosso";
+        font-weight: normal;
+        white-space: nowrap;
     }
 
     a {
-        font-family: " Avenir finoI ";
-        font-weight: bold;
+        font-family: "Avenir fino";
         color: var(--cor2);
     }
 
@@ -66,7 +69,7 @@
 }
 
 .slide img {
-    padding: 7rem 0rem 0rem 10rem;
+    padding: 5rem 0rem 0rem 10rem;
     width: 60%;
     height: 60%;
 }
@@ -81,7 +84,6 @@
     font-size: 2.5rem;
     border: none;
     background: none;
-    transition: 0s;
 }
 
 .proximo {
@@ -91,8 +93,6 @@
 .anterior {
     left: 0;
 }
-
-
 
 @keyframes fade {
     from {
