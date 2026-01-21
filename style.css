@@ -41,6 +41,15 @@ body {
     height: 100%;
 }
 
+body {
+    opacity: 0;
+}
+
+body.loaded {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
 * {
     --cor1: #eacc23;
     --cor2: #1e2d3b;
