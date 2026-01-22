@@ -7,6 +7,37 @@
         <link rel="stylesheet" href="projetoI.css" />
     </head>
     <body>
+        <nav>
+            <header id="nav-header">
+                <div id="nav-headerI">
+                    <a href="/index.html">
+                        <img src="img/logo-EC.avif" alt="logo" />
+                    </a>
+                    <div>
+                        <h1 id="cima">
+                            <a href="#">ESFERA</a>
+                        </h1>
+                        <h1 id="baixo">
+                            <a href="#">CONSTRUÇÃO</a>
+                        </h1>
+                    </div>
+                </div>
+                <div id="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </header>
+            <div id="link-nav" class="nav-links">
+                <div id="close-btn">&times;</div>
+
+                <a href="index.html#home">HOME</a>
+                <a href="index.html#servicos">SERVIÇOS</a>
+                <a href="index.html#quem-somos">QUEM SOMOS</a>
+                <a href="index.html#projetos">PROJETOS</a>
+                <a href="index.html#articleIII">CONTATO</a>
+            </div>
+        </nav>
         <article>
             <div id="header">
                 <h1>PROJETO 1</h1>
@@ -28,15 +59,31 @@
                     elit. Dignissimos dolor, veritatis molestiae quo rem
                     possimus. Placeat, odit ipsam veniam facilis, hic
                     necessitatibus harum quos magni nisi, quae quo ullam
-                    asperiores?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate aliquid debitis hic, fugiat iure culpa error suscipit odit voluptates deserunt veritatis quas velit, asperiores mollitia incidunt necessitatibus voluptas maiores numquam.
-                    necessitatibus voluptas maiores numquam.
+                    asperiores?Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Cupiditate aliquid debitis hic, fugiat
+                    iure culpa error suscipit odit voluptates deserunt veritatis
+                    quas velit, asperiores mollitia incidunt necessitatibus
+                    voluptas maiores numquam. necessitatibus voluptas maiores
+                    numquam.
                 </p>
-                <img src="img/projetos/project0I.avif" alt="" />
+                <div class="slideshow-container">
+                    <div class="slides-wrapper" id="wrapper">
+                        <img src="img/projetos/project0I.avif" />
+                        <img src="img/projetos/project0II.avif" />
+                        <img src="img/projetos/project0III.avif" />
+                        <img src="img/projetos/project0IIII.avif" />
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
             </div>
             <a href="index.html#articleII">
-                <div id="button">
-                    <button type="submit">VOLTAR A PROJETOS</button>
-                </div>
+                <a href="index.html#projetos">
+                    <div id="button">
+                        <button type="submit">VOLTAR A PROJETOS</button>
+                    </div>
+                </a>
             </a>
         </section>
         <footer>

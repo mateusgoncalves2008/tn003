@@ -41,6 +41,15 @@ body {
     height: 100%;
 }
 
+body {
+    opacity: 0;
+}
+
+body.loaded {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
 * {
     --cor1: #eacc23;
     --cor2: #1e2d3b;
@@ -167,7 +176,7 @@ nav {
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 
-    & img {
+    #setaIIIIIIIIIIIIIIIIIIIIIII {
         height: 12%;
         width: 9%;
     }
@@ -283,14 +292,14 @@ section {
             max-width: 50%;
             line-height: 1.6em;
             font-size: 17px;
-            margin: 2rem 6.7rem 0rem 0rem;
+            margin: 2rem 7.5rem 0rem 0rem;
         }
     }
 
     .corpo h2 {
         display: flex;
         font-size: 3.8rem;
-        padding: 3.3rem 2.3rem 0rem 0rem;
+        padding: 3.3rem 3rem 0rem 0rem;
         letter-spacing: 1.3px;
         font-family: "Avenir grosso";
     }
@@ -301,7 +310,7 @@ section {
 
     #accent {
         display: flex;
-        width: 6.9rem;
+        width: 9rem;
         height: 8px;
         background: var(--cor1);
         margin: 16px 0;
@@ -413,26 +422,71 @@ aside {
             width: 8rem;
             height: 8px;
             background: var(--cor1);
-            margin: 0rem 0rem 3rem;
+            margin: 0rem 0rem 6rem;
         }
+    }
+
+    .projct {
+        width: 100%;
+        overflow: hidden;
+        border-radius: 7px;
+    }
+
+    .projeto-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .projeto-container img {
+        width: 100%;
+        height: auto;
+        display: flex;
+        border-radius: 7px;
+        transition: transform 0.5s ease;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.7);
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 20px;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+
+    .projeto-titulo {
+        color: #111;
+        font-family: "Avenir grosso", sans-serif;
+        font-size: 1.1rem;
+        margin: 0;
+    }
+
+    .projeto-container:hover .overlay {
+        opacity: 1;
+    }
+
+    .projeto-container:hover img {
+        transform: scale(1.05);
     }
 
     #corpoII {
         display: grid;
-        justify-items: center;
-        align-items: center;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 2fr);
         gap: 2rem;
-        width: 70.5%;
-        margin: 0 auto;
-        padding: 3rem;
+        margin-left: 16.4rem;
+        margin-right: 16.4rem;
+        margin-bottom: 7rem;
     }
-    .projct {
-        display: flex;
-        & img {
-            width: 100%;
-            border-radius: 7px;
-        }
+
+    #corpoII a {
+        text-decoration: none;
     }
 }
 
@@ -465,7 +519,7 @@ figure {
     .cliente {
         display: flex;
         justify-content: center;
-        gap: 2.5rem;
+        gap: 2.7rem;
     }
 
     #fotoIIIIII {
@@ -545,13 +599,13 @@ figure {
 #container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 0% 18%;
-    gap: 10rem;
+    padding: 0% 17%;
+    gap: 11rem;
 }
 
 #formulario {
     flex-direction: column;
-    width: 27rem;
+    width: 27.5rem;
 
     h2 {
         font-size: 28px;
@@ -602,7 +656,7 @@ figure {
     #button {
         display: flex;
         justify-content: right;
-        padding-bottom: 2rem;
+        padding-bottom: 5rem;
 
         button {
             font-family: "Avenir grosso";
@@ -2918,7 +2972,7 @@ footer {
     }
 }
 
-@media (min-width: 851px) and (max-width: 1440px) {
+@media (min-width: 851px) and (max-width: 1000px) {
     #nav-header {
         padding: 4px;
         gap: 0.5rem;

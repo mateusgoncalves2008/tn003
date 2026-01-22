@@ -41,7 +41,6 @@ function smoothScrollTo(endX, endY, duration) {
         window.scroll(newX, newY);
     }, 1000 / 60);
 }
-
 const menuLinks = document.querySelectorAll('#link-nav a[href^="#"]');
 
 menuLinks.forEach((link) => {
@@ -52,8 +51,39 @@ menuLinks.forEach((link) => {
 
         if (targetElement) {
             const targetPosition = targetElement.offsetTop - 96;
-
             smoothScrollTo(0, targetPosition, 2500);
         }
     });
+});
+
+if ("scrollRestoration" in history) {
+    history.scrollRestoration = "manual";
+}
+
+window.scrollTo(0, 0);
+
+document.addEventListener("DOMContentLoaded", () => {
+    window.scrollTo(0, 0);
+
+    if (window.location.hash) {
+        const targetId = window.location.hash;
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+            document.body.classList.remove("loaded");
+
+            setTimeout(() => {
+                window.scrollTo(0, 0);
+                document.body.classList.add("loaded");
+
+                const targetPosition = targetElement.offsetTop - 96;
+
+                setTimeout(() => {
+                    smoothScrollTo(0, targetPosition, 2500);
+                }, 100);
+            }, 50);
+        }
+    } else {
+        document.body.classList.add("loaded");
+    }
 });
