@@ -88,5 +88,5 @@ function startAutoSlide() {
     autoSlideTimeout = setTimeout(() => {
         showSlides(slideIndex + 1);
         startAutoSlide();
-    }, 6000); // Aumentei para 5 segundos para dar tempo de ler o texto
+    }, 8000);
 }
