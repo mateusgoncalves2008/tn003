@@ -176,7 +176,7 @@ nav {
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 
-    & img {
+    #setaIIIIIIIIIIIIIIIIIIIIIII {
         height: 12%;
         width: 9%;
     }
@@ -292,14 +292,14 @@ section {
             max-width: 50%;
             line-height: 1.6em;
             font-size: 17px;
-            margin: 2rem 6.7rem 0rem 0rem;
+            margin: 2rem 7.5rem 0rem 0rem;
         }
     }
 
     .corpo h2 {
         display: flex;
         font-size: 3.8rem;
-        padding: 3.3rem 2.3rem 0rem 0rem;
+        padding: 3.3rem 3rem 0rem 0rem;
         letter-spacing: 1.3px;
         font-family: "Avenir grosso";
     }
@@ -310,7 +310,7 @@ section {
 
     #accent {
         display: flex;
-        width: 6.9rem;
+        width: 9rem;
         height: 8px;
         background: var(--cor1);
         margin: 16px 0;
@@ -480,8 +480,8 @@ aside {
         display: grid;
         grid-template-columns: repeat(2, 2fr);
         gap: 2rem;
-        margin-left: 17rem;
-        margin-right: 17rem;
+        margin-left: 16.4rem;
+        margin-right: 16.4rem;
         margin-bottom: 7rem;
     }
 
@@ -519,7 +519,7 @@ figure {
     .cliente {
         display: flex;
         justify-content: center;
-        gap: 2.5rem;
+        gap: 2.7rem;
     }
 
     #fotoIIIIII {
@@ -599,13 +599,13 @@ figure {
 #container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 0% 18%;
-    gap: 10rem;
+    padding: 0% 17%;
+    gap: 11rem;
 }
 
 #formulario {
     flex-direction: column;
-    width: 27rem;
+    width: 27.5rem;
 
     h2 {
         font-size: 28px;
@@ -656,7 +656,7 @@ figure {
     #button {
         display: flex;
         justify-content: right;
-        padding-bottom: 2rem;
+        padding-bottom: 5rem;
 
         button {
             font-family: "Avenir grosso";

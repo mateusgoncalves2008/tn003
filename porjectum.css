@@ -33,8 +33,8 @@
 }
 
 #img-X {
-    display: flex;
-    padding: 3rem 0rem 2rem 83rem;
+    width: 100%;
+    margin: 3rem 0rem 1rem 82rem;
 }
 
 .slide {
@@ -48,7 +48,7 @@ img {
 }
 
 .texto {
-    padding: 5rem 0rem 0rem 9rem;
+    padding: 5rem 0rem 0rem 10rem;
 
     h2 {
         font-size: 3rem;
@@ -74,7 +74,7 @@ img {
 }
 
 .slide img {
-    margin: 0rem 0rem 0rem 8.5rem;
+    margin: 0rem 0rem 0rem 8rem;
     width: 70%;
     height: auto;
 }
