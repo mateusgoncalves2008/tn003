@@ -462,6 +462,7 @@ aside {
     }
 
     .projeto-titulo {
+        display: flex;
         color: #111;
         font-family: "Avenir grosso", sans-serif;
         font-size: 1.1rem;
@@ -469,10 +470,12 @@ aside {
     }
 
     .projeto-container:hover .overlay {
+        display: flex;
         opacity: 1;
     }
 
     .projeto-container:hover img {
+        display: flex;
         transform: scale(1.05);
     }
 
@@ -986,6 +989,7 @@ footer {
     }
 
     #articleII {
+        height: 200%;
         #cabecaII {
             h2 {
                 padding: 3rem 0rem 1rem 0rem;
@@ -1009,6 +1013,22 @@ footer {
                 & img {
                     width: 100%;
                 }
+            }
+
+            .overlay {
+                display: none;
+            }
+
+            .projeto-titulo {
+                display: none;
+            }
+
+            .projeto-container:hover .overlay {
+                display: none;
+            }
+
+            .projeto-container:hover img {
+                transform: none;
             }
         }
     }
@@ -1331,6 +1351,7 @@ footer {
     }
 
     #articleII {
+        height: 233%;
         #cabecaII {
             h2 {
                 padding: 3rem 0rem 1rem 0rem;
@@ -1352,6 +1373,22 @@ footer {
                 & img {
                     width: 100%;
                 }
+            }
+
+            .overlay {
+                display: none;
+            }
+
+            .projeto-titulo {
+                display: none;
+            }
+
+            .projeto-container:hover .overlay {
+                display: none;
+            }
+
+            .projeto-container:hover img {
+                transform: none;
             }
         }
     }
@@ -1679,14 +1716,16 @@ footer {
     }
 
     #articleII {
+        height: 260%;
         #cabecaII {
             h2 {
-                padding: 3rem 0rem 1rem 0rem;
+                padding: 3rem 0rem 0.5rem 0rem;
                 font-size: 3rem;
             }
             #accent {
                 width: 8rem;
                 height: 8px;
+                margin-bottom: 5rem;
             }
         }
 
@@ -1700,6 +1739,22 @@ footer {
                 & img {
                     width: 100%;
                 }
+            }
+
+            .overlay {
+                display: none;
+            }
+
+            .projeto-titulo {
+                display: none;
+            }
+
+            .projeto-container:hover .overlay {
+                display: none;
+            }
+
+            .projeto-container:hover img {
+                transform: none;
             }
         }
     }
@@ -2081,6 +2136,22 @@ footer {
                     width: 100%;
                 }
             }
+
+            .overlay {
+                display: none;
+            }
+
+            .projeto-titulo {
+                display: none;
+            }
+
+            .projeto-container:hover .overlay {
+                display: none;
+            }
+
+            .projeto-container:hover img {
+                transform: none;
+            }
         }
     }
 
@@ -2440,6 +2511,7 @@ footer {
     }
 
     #articleII {
+        height: 340%;
         #cabecaII {
             h2 {
                 padding: 3rem 0rem 1rem 0rem;
@@ -2461,6 +2533,22 @@ footer {
                 & img {
                     width: 100%;
                 }
+            }
+
+            .overlay {
+                display: none;
+            }
+
+            .projeto-titulo {
+                display: none;
+            }
+
+            .projeto-container:hover .overlay {
+                display: none;
+            }
+
+            .projeto-container:hover img {
+                transform: none;
             }
         }
     }
@@ -2847,6 +2935,22 @@ footer {
                 & img {
                     width: 100%;
                 }
+            }
+
+            .overlay {
+                display: none;
+            }
+
+            .projeto-titulo {
+                display: none;
+            }
+
+            .projeto-container:hover .overlay {
+                display: none;
+            }
+
+            .projeto-container:hover img {
+                transform: none;
             }
         }
     }
