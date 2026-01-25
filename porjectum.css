@@ -723,7 +723,60 @@ img {
             margin: 2rem 0rem 2.3rem 0rem;
 
             img {
-                width: 7rem;
+                width: 9rem;
+                height: 4.4rem;
+            }
+        }
+
+        img {
+            max-width: 45%;
+        }
+
+        .texto {
+            padding: 3rem 0rem 0rem 10rem;
+
+            h2 {
+                font-size: 4rem;
+                padding-bottom: 2rem;
+            }
+
+            a {
+                font-size: 1.3rem;
+            }
+        }
+
+        .slide img {
+            margin: 0rem 0rem 0rem 14rem;
+            width: 65%;
+        }
+
+        .botao-nav {
+            top: 50%;
+            width: 64%;
+            font-size: 3.9rem;
+        }
+
+        .anterior {
+            left: -19rem;
+        }
+    }
+
+    .slide.ativo {
+        flex-direction: none;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1540px) {
+    .carrossel-container {
+        max-width: 100%;
+        margin: 0rem 0rem 0rem 0rem;
+
+        #img-X {
+            width: 100%;
+            margin: 2rem 0rem 2.3rem 0rem;
+
+            img {
+                width: 9rem;
                 height: 4.4rem;
             }
         }
