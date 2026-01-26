@@ -167,6 +167,13 @@ img {
         flex-direction: column;
     }
 
+    .botao-nav {
+        top: 40%;
+        padding: 10px;
+        color: rgba(255, 255, 255, 0.629);
+        font-size: 2.2rem;
+    }
+
     .proximo,
     .anterior {
         padding-top: 5px;
@@ -207,6 +214,10 @@ img {
             margin: 0;
             padding-bottom: 2rem;
         }
+
+        a {
+            font-size: 20px;
+        }
     }
 
     img {
@@ -221,6 +232,13 @@ img {
 
     .slide.ativo {
         flex-direction: column;
+    }
+
+    .botao-nav {
+        top: 40%;
+        padding: 10px;
+        color: rgba(255, 255, 255, 0.629);
+        font-size: 2.5rem;
     }
 
     .proximo,
@@ -259,9 +277,13 @@ img {
         padding: 20px 0px 60px 10px;
 
         h2 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             margin: 0;
             padding-bottom: 2rem;
+        }
+
+        a {
+            font-size: 22px;
         }
     }
 
@@ -277,6 +299,13 @@ img {
 
     .slide.ativo {
         flex-direction: column;
+    }
+
+    .botao-nav {
+        top: 38%;
+        padding: 10px;
+        color: rgba(255, 255, 255, 0.707);
+        font-size: 2.6rem;
     }
 
     .proximo,
@@ -315,13 +344,13 @@ img {
         padding: 20px 0px 60px 20px;
 
         h2 {
-            font-size: 3.5rem;
+            font-size: 3.7rem;
             margin: 0;
             padding-bottom: 2rem;
         }
 
         a {
-            font-size: 1.2rem;
+            font-size: 1.6rem;
         }
     }
 
@@ -340,7 +369,10 @@ img {
     }
 
     .botao-nav {
-        top: 44%;
+        top: 39%;
+        padding: 5px;
+        color: rgba(255, 255, 255, 0.734);
+        font-size: 3rem;
     }
 
     .proximo,
@@ -547,7 +579,6 @@ img {
 
     .proximo,
     .anterior {
-        display: flex;
         padding-top: 10px;
         padding-bottom: 10px;
         margin: 0px 10px;
@@ -556,7 +587,7 @@ img {
     }
 }
 
-@media (min-width: 951px) and (max-width: 1100px) {
+@media (min-width: 950px) and (max-width: 1100px) {
     .carrossel-container {
         max-width: 100%;
         margin: 0rem 0rem 0rem 0rem;
@@ -593,22 +624,33 @@ img {
             width: 65%;
         }
 
-        .botao-nav {
-            top: 41%;
-            width: 23%;
-        }
-
         .anterior {
-            left: -3rem;
+            left: 1.7rem;
         }
     }
 
     .slide.ativo {
         flex-direction: column;
     }
+
+    .botao-nav {
+        top: 44%;
+        padding: 16px;
+        color: var(--cor3);
+        width: 65px;
+        font-size: 3rem;
+    }
+
+    .proximo,
+    .anterior {
+        padding: 10px 1px 10px 1px;
+        margin: 0px 10px;
+        border-radius: 8px;
+        background-color: rgba(0, 0, 0, 0.188);
+    }
 }
 
-@media (min-width: 1050px) and (max-width: 1250px) {
+@media (min-width: 1100px) and (max-width: 1250px) {
     .carrossel-container {
         max-width: 100%;
         margin: 0rem 0rem 0rem 0rem;
@@ -618,8 +660,8 @@ img {
             margin: 2rem 0rem 2.3rem 0rem;
 
             img {
-                width: 6rem;
-                height: 4.4rem;
+                width: 8rem;
+                height: 6rem;
             }
         }
 
@@ -631,12 +673,13 @@ img {
             padding: 3rem 0rem 0rem 12.1rem;
 
             h2 {
-                font-size: 4rem;
+                font-size: 5.5rem;
                 padding-bottom: 2rem;
             }
 
             a {
-                font-size: 1.3rem;
+                font-size: 2rem;
+                padding-bottom: 5rem;
             }
         }
 
@@ -646,13 +689,23 @@ img {
         }
 
         .botao-nav {
-            top: 41%;
-            width: 23%;
+            top: 44%;
+            width: 7.5%;
+            color: #ffffff;
+            font-size: 3.3rem;
         }
 
         .anterior {
-            left: -3rem;
+            left: 0rem;
         }
+    }
+
+    .proximo,
+    .anterior {
+        padding: 10px 1px 10px 1px;
+        margin: 0px 10px;
+        border-radius: 8px;
+        background-color: rgba(0, 0, 0, 0.188);
     }
 
     .slide.ativo {
@@ -680,7 +733,7 @@ img {
         }
 
         .texto {
-            padding: 3rem 0rem 0rem 13.6rem;
+            padding: 3rem 0rem 0rem 0rem;
 
             h2 {
                 font-size: 4rem;
@@ -693,27 +746,23 @@ img {
         }
 
         .slide img {
-            margin: 0rem auto 0rem auto;
-            width: 65%;
+            margin: 0rem 0rem 0rem 21rem;
+            width: 45%;
         }
 
         .botao-nav {
-            top: 41%;
-            width: 23%;
+            top: 50%;
+            width: 55%;
             font-size: 3.9rem;
         }
 
         .anterior {
-            left: -3rem;
+            left: -1.7rem;
         }
-    }
-
-    .slide.ativo {
-        flex-direction: column;
     }
 }
 
-@media (min-width: 1350px) and (max-width: 1440px) {
+@media (min-width: 1350px) and (max-width: 1420px) {
     .carrossel-container {
         max-width: 100%;
         margin: 0rem 0rem 0rem 0rem;
@@ -746,7 +795,7 @@ img {
         }
 
         .slide img {
-            margin: 0rem 0rem 0rem 14rem;
+            margin: 0rem 0rem 5rem 14rem;
             width: 65%;
         }
 
