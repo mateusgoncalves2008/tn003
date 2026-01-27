@@ -723,8 +723,8 @@ img {
             margin: 2rem 0rem 2.3rem 0rem;
 
             img {
-                width: 6rem;
-                height: 4.4rem;
+                width: 7rem;
+                height: 5rem;
             }
         }
 
@@ -733,20 +733,21 @@ img {
         }
 
         .texto {
-            padding: 3rem 0rem 0rem 0rem;
+            padding: 0rem 0rem 0rem 0rem;
+            margin: 4rem 0rem 0rem 7rem;
 
             h2 {
-                font-size: 4rem;
+                font-size: 4.5rem;
                 padding-bottom: 2rem;
             }
 
             a {
-                font-size: 1.3rem;
+                font-size: 1.6rem;
             }
         }
 
         .slide img {
-            margin: 0rem 0rem 0rem 21rem;
+            margin: 0rem 0rem 0rem 16rem;
             width: 45%;
         }
 
@@ -757,12 +758,12 @@ img {
         }
 
         .anterior {
-            left: -1.7rem;
+            left: -11.5rem;
         }
     }
 }
 
-@media (min-width: 1350px) and (max-width: 1420px) {
+@media (min-width: 1350px) and (max-width: 1400px) {
     .carrossel-container {
         max-width: 100%;
         margin: 0rem 0rem 0rem 0rem;
@@ -782,15 +783,16 @@ img {
         }
 
         .texto {
-            padding: 3rem 0rem 0rem 10rem;
+            margin: 6rem 0rem 0rem 8rem;
+            padding: 0rem 0rem 0rem 0rem;
 
             h2 {
-                font-size: 4rem;
+                font-size: 4.6rem;
                 padding-bottom: 2rem;
             }
 
             a {
-                font-size: 1.3rem;
+                font-size: 1.6rem;
             }
         }
 
@@ -800,13 +802,13 @@ img {
         }
 
         .botao-nav {
-            top: 50%;
+            top: 47%;
             width: 64%;
             font-size: 3.9rem;
         }
 
         .anterior {
-            left: -19rem;
+            left: -18rem;
         }
     }
 
@@ -815,7 +817,7 @@ img {
     }
 }
 
-@media (min-width: 1440px) and (max-width: 1540px) {
+@media (min-width: 1400px) and (max-width: 1500px) {
     .carrossel-container {
         max-width: 100%;
         margin: 0rem 0rem 0rem 0rem;
@@ -825,41 +827,366 @@ img {
             margin: 2rem 0rem 2.3rem 0rem;
 
             img {
-                width: 9rem;
-                height: 4.4rem;
+                width: 10rem;
+                height: 6rem;
             }
         }
 
         img {
-            max-width: 45%;
+            max-width: 55%;
         }
 
         .texto {
-            padding: 3rem 0rem 0rem 10rem;
+            margin: 5rem 0rem 0rem 7.5rem;
+            padding: 0rem;
 
             h2 {
-                font-size: 4rem;
-                padding-bottom: 2rem;
+                font-size: 4.7rem;
+                padding-bottom: 4rem;
             }
 
             a {
-                font-size: 1.3rem;
+                font-size: 1.9rem;
             }
         }
 
         .slide img {
-            margin: 0rem 0rem 0rem 14rem;
+            margin: 0rem 0rem 0rem 11rem;
             width: 65%;
         }
 
         .botao-nav {
             top: 50%;
-            width: 64%;
+            width: 53%;
             font-size: 3.9rem;
         }
 
         .anterior {
-            left: -19rem;
+            left: -17.8rem;
+        }
+    }
+
+    .slide.ativo {
+        flex-direction: none;
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 1650px) {
+    .carrossel-container {
+        max-width: 100%;
+        margin: 0rem 0rem 0rem 0rem;
+
+        #img-X {
+            width: 100%;
+            margin: 2rem 0rem 2.3rem 0rem;
+
+            img {
+                width: 10.7rem;
+                height: 6.4rem;
+            }
+        }
+
+        img {
+            max-width: 55%;
+        }
+
+        .texto {
+            margin: 5rem 0rem 0rem 7.5rem;
+            padding: 0rem;
+
+            h2 {
+                font-size: 5.7rem;
+                padding-bottom: 4rem;
+            }
+
+            a {
+                font-size: 2.3rem;
+            }
+        }
+
+        .slide img {
+            margin: 0rem 0rem 0rem 11rem;
+            width: 65%;
+        }
+
+        .botao-nav {
+            top: 50%;
+            width: 55%;
+            font-size: 5rem;
+        }
+
+        .anterior {
+            left: -21.4rem;
+        }
+    }
+
+    .slide.ativo {
+        flex-direction: none;
+    }
+}
+
+@media (min-width: 1650px) and (max-width: 1700px) {
+    .carrossel-container {
+        max-width: 100%;
+        margin: 0rem 0rem 0rem 0rem;
+
+        #img-X {
+            width: 100%;
+            margin: 2rem 0rem 2.3rem 0rem;
+
+            img {
+                width: 10.7rem;
+                height: 6.4rem;
+            }
+        }
+
+        img {
+            max-width: 55%;
+        }
+
+        .texto {
+            margin: 5rem 0rem 0rem 8.5rem;
+            padding: 0rem;
+
+            h2 {
+                font-size: 5.7rem;
+                padding-bottom: 4rem;
+            }
+
+            a {
+                font-size: 2.3rem;
+            }
+        }
+
+        .slide img {
+            margin: 0rem 0rem 0rem 11rem;
+            width: 65%;
+        }
+
+        .botao-nav {
+            top: 50%;
+            width: 55%;
+            font-size: 5rem;
+        }
+
+        .anterior {
+            left: -22.5rem;
+        }
+    }
+
+    .slide.ativo {
+        flex-direction: none;
+    }
+}
+
+@media (min-width: 1700px) and (max-width: 1750px) {
+    .carrossel-container {
+        max-width: 100%;
+        margin: 0rem 0rem 0rem 0rem;
+
+        #img-X {
+            width: 100%;
+            margin: 2rem 0rem 2.3rem 0rem;
+
+            img {
+                width: 10.7rem;
+                height: 6.4rem;
+            }
+        }
+
+        img {
+            max-width: 55%;
+        }
+
+        .texto {
+            margin: 5rem 0rem 0rem 9rem;
+            padding: 0rem;
+
+            h2 {
+                font-size: 5.7rem;
+                padding-bottom: 4rem;
+            }
+
+            a {
+                font-size: 2.3rem;
+            }
+        }
+
+        .slide img {
+            margin: 0rem 0rem 0rem 11rem;
+            width: 65%;
+        }
+
+        .botao-nav {
+            top: 49%;
+            width: 57%;
+            font-size: 5.7rem;
+        }
+
+        .anterior {
+            left: -24rem;
+        }
+    }
+
+    .slide.ativo {
+        flex-direction: none;
+    }
+}
+
+@media (min-width: 1750px) and (max-width: 1900px) {
+    .carrossel-container {
+        max-width: 100%;
+        margin: 0rem 0rem 0rem 0rem;
+
+        #img-X {
+            width: 100%;
+            margin: 2rem 0rem 2.3rem 0rem;
+
+            img {
+                width: 10.7rem;
+                height: 6.4rem;
+            }
+        }
+
+        img {
+            max-width: 55%;
+        }
+
+        .texto {
+            margin: 5rem 0rem 0rem 9rem;
+            padding: 0rem;
+
+            h2 {
+                font-size: 5.7rem;
+                padding-bottom: 4rem;
+            }
+
+            a {
+                font-size: 2.3rem;
+            }
+        }
+
+        .slide img {
+            margin: 0rem 0rem 0rem 11rem;
+            width: 65%;
+        }
+
+        .botao-nav {
+            top: 49%;
+            width: 59%;
+            font-size: 5.7rem;
+        }
+
+        .anterior {
+            left: -27rem;
+        }
+    }
+
+    .slide.ativo {
+        flex-direction: none;
+    }
+}
+
+@media (min-width: 1850px) and (max-width: 2000px) {
+    .carrossel-container {
+        max-width: 100%;
+        margin: 0rem 0rem 0rem 0rem;
+
+        #img-X {
+            width: 100%;
+            margin: 2rem 0rem 2.3rem 0rem;
+
+            img {
+                width: 10.7rem;
+                height: 6.4rem;
+            }
+        }
+
+        img {
+            max-width: 55%;
+        }
+
+        .texto {
+            margin: 7rem 0rem 0rem 9rem;
+            padding: 0rem;
+
+            h2 {
+                font-size: 6.7rem;
+                padding-bottom: 4rem;
+            }
+
+            a {
+                font-size: 2.6rem;
+            }
+        }
+
+        .slide img {
+            margin: 0rem 0rem 0rem 11rem;
+            width: 65%;
+        }
+
+        .botao-nav {
+            top: 50%;
+            width: 62%;
+            font-size: 5.7rem;
+        }
+
+        .anterior {
+            left: -29.8rem;
+        }
+    }
+
+    .slide.ativo {
+        flex-direction: none;
+    }
+}
+
+@media (min-width: 1850px) and (max-width: 1900px) {
+    .carrossel-container {
+        max-width: 100%;
+        margin: 0rem 0rem 0rem 0rem;
+
+        #img-X {
+            width: 100%;
+            margin: 2rem 0rem 2.3rem 0rem;
+
+            img {
+                width: 10.7rem;
+                height: 6.4rem;
+            }
+        }
+
+        img {
+            max-width: 55%;
+        }
+
+        .texto {
+            margin: 7rem 0rem 0rem 9rem;
+            padding: 0rem;
+
+            h2 {
+                font-size: 6.7rem;
+                padding-bottom: 4rem;
+            }
+
+            a {
+                font-size: 2.6rem;
+            }
+        }
+
+        .slide img {
+            margin: 0rem 0rem 0rem 11rem;
+            width: 65%;
+        }
+
+        .botao-nav {
+            top: 50%;
+            width: 62%;
+            font-size: 5.7rem;
+        }
+
+        .anterior {
+            left: -29.8rem;
         }
     }
 
