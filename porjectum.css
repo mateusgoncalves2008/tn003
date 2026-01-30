@@ -797,7 +797,7 @@ img {
         }
 
         .slide img {
-            margin: 0rem 0rem 5rem 14rem;
+            margin: 0rem 0rem 10rem 14rem;
             width: 65%;
         }
 
@@ -851,7 +851,7 @@ img {
         }
 
         .slide img {
-            margin: 0rem 0rem 0rem 11rem;
+            margin: 0rem 0rem 10rem 11rem;
             width: 65%;
         }
 
@@ -882,8 +882,8 @@ img {
             margin: 2rem 0rem 2.3rem 0rem;
 
             img {
-                width: 11rem;
-                height: 5.3rem;
+                width: 11.5rem;
+                height: 4.6rem;
             }
         }
 
@@ -892,16 +892,16 @@ img {
         }
 
         .texto {
-            margin: 3rem 0rem 0rem 14rem;
+            margin: 5rem 0rem 0rem 11rem;
             padding: 0rem;
 
             h2 {
-                font-size: 4.4rem;
+                font-size: 4rem;
                 padding-bottom: 3rem;
             }
 
             a {
-                font-size: 1.7rem;
+                font-size: 1.3rem;
             }
         }
 
@@ -912,12 +912,12 @@ img {
 
         .botao-nav {
             top: 50%;
-            width: 77%;
-            font-size: 4.3rem;
+            width: 80%;
+            font-size: 3rem;
         }
 
         .anterior {
-            left: -33rem;
+            left: -35rem;
         }
     }
 
@@ -961,7 +961,7 @@ img {
         }
 
         .slide img {
-            margin: 0rem 0rem 0rem 11rem;
+            margin: 0rem 0rem 10rem 11rem;
             width: 65%;
         }
 
@@ -1016,7 +1016,7 @@ img {
         }
 
         .slide img {
-            margin: 0rem 0rem 0rem 17rem;
+            margin: 0rem 0rem 10rem 17rem;
             width: 65%;
         }
 
