@@ -882,7 +882,7 @@ footer {
     }
 }
 
-@media (min-width: 700px) and (max-width: 845px) {
+@media (min-width: 700px) and (max-width: 850px) {
     #nav-header {
         justify-content: space-between;
         width: 100%;
@@ -997,6 +997,7 @@ footer {
                 max-width: none;
                 margin: 0px 5rem 2rem 5rem;
                 padding: 0px;
+                font-size: 19px;
             }
 
             .slideshow-container {
@@ -1025,8 +1026,273 @@ footer {
     }
 
     #button {
-        padding-top: 20px;
-        padding-left: 10px;
+        padding-top: 1.3rem;
+        padding-left: 5rem;
+
+        button {
+            padding: 11px 20px;
+            font-size: 1.1rem;
+        }
+
+        button:hover {
+            background: #333;
+            color: #eacc23;
+            border: 0px solid var(--cor6);
+        }
+    }
+}
+
+@media (min-width: 850px) and (max-width: 1000px) {
+    #nav-header {
+        justify-content: space-between;
+        width: 100%;
+        padding: 5px;
+
+        & img {
+            width: 95%;
+            height: 95%;
+        }
+
+        div {
+            #cima {
+                font-size: 30px;
+            }
+
+            #baixo {
+                font-size: 30px;
+            }
+        }
+
+        #nav-headerI {
+            flex-direction: row;
+            gap: 1rem;
+        }
+    }
+
+    #mobile-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        cursor: pointer;
+    }
+
+    #mobile-menu span {
+        width: 25px;
+        height: 2.4px;
+        background-color: var(--cor2);
+    }
+
+    #link-nav.nav-links {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #1e2d3b;
+        z-index: 2000;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(50px);
+        transition:
+            opacity 0.6s ease,
+            transform 0.6s ease,
+            visibility 0.6s;
+    }
+
+    #link-nav.nav-links.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+
+    #link-nav a {
+        font-size: 2rem;
+        margin: 20px 0;
+        color: var(--cor3);
+    }
+
+    #close-btn {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 3rem;
+        color: var(--cor3);
+        cursor: pointer;
+        line-height: 1;
+    }
+
+    article {
+        background-color: var(--cor5);
+
+        #header {
+            h1 {
+                font-size: 3rem;
+                padding: 9rem 0rem 0rem 5rem;
+            }
+
+            #accent {
+                width: 7rem;
+                height: 8px;
+            }
+
+            #container-span {
+                padding: 0rem 0rem 3.7rem 5rem;
+            }
+        }
+    }
+
+    section {
+        background-color: var(--cor3);
+
+        #corpo {
+            flex-direction: column;
+            padding-top: 30px;
+
+            p {
+                text-align: justify;
+                max-width: none;
+                margin: 0px 5rem 3rem 5rem;
+                padding: 0px;
+                font-size: 21px;
+            }
+
+            .slideshow-container {
+                max-width: 50rem;
+                width: 100%;
+            }
+
+            #corpo-fotos {
+                padding: 0rem 5rem;
+            }
+
+            .slides-wrapper img {
+                height: 95%;
+            }
+
+            .prev,
+            .next {
+                top: 45%;
+                padding: 0 10px;
+                padding-bottom: 3px;
+                font-weight: 100;
+                font-size: 35px;
+                margin: 0px 11px 0px 11px;
+            }
+        }
+    }
+
+    #button {
+        padding-top: 1.3rem;
+        padding-left: 5rem;
+
+        button {
+            padding: 11px 20px;
+            font-size: 1.1rem;
+        }
+
+        button:hover {
+            background: #333;
+            color: #eacc23;
+            border: 0px solid var(--cor6);
+        }
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 3000px) {
+    #nav-header {
+        justify-content: space-between;
+        width: 100%;
+        padding: 5px;
+
+        & img {
+            width: 95%;
+            height: 95%;
+        }
+
+        div {
+            #cima {
+                font-size: 30px;
+            }
+
+            #baixo {
+                font-size: 30px;
+            }
+        }
+
+        #nav-headerI {
+            flex-direction: row;
+            gap: 1rem;
+            
+        }
+    }
+
+    article {
+        background-color: var(--cor5);
+
+        #header {
+            h1 {
+                font-size: 3rem;
+                padding: 9rem 0rem 0rem 5rem;
+            }
+
+            #accent {
+                width: 7rem;
+                height: 8px;
+            }
+
+            #container-span {
+                padding: 0rem 0rem 3.7rem 5rem;
+            }
+        }
+    }
+
+    section {
+        background-color: var(--cor3);
+
+        #corpo {
+            flex-direction: column;
+            padding-top: 30px;
+
+            p {
+                text-align: justify;
+                max-width: none;
+                margin: 0px 5rem 3rem 5rem;
+                padding: 0px;
+                font-size: 21px;
+            }
+
+            .slideshow-container {
+                max-width: 50rem;
+                width: 100%;
+            }
+
+            #corpo-fotos {
+                padding: 0rem 5rem;
+            }
+
+            .slides-wrapper img {
+                height: 95%;
+            }
+
+            .prev,
+            .next {
+                top: 45%;
+                padding: 0 10px;
+                padding-bottom: 3px;
+                font-weight: 100;
+                font-size: 35px;
+                margin: 0px 11px 0px 11px;
+            }
+        }
+    }
+
+    #button {
+        padding-top: 1.3rem;
+        padding-left: 5rem;
 
         button {
             padding: 11px 20px;
