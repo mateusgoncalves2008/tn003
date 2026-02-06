@@ -257,6 +257,8 @@ footer {
     padding: 40px 20px;
     text-align: center;
     font-family: "Raleway", sans-serif;
+    width: 96.1.2%;
+    height: 100%;
 
     #footer {
         max-width: 900px;
@@ -1202,10 +1204,10 @@ footer {
     }
 }
 
-@media (min-width: 1000px) and (max-width: 3000px) {
+@media (min-width: 1000px) and (max-width: 1100px) {
     #nav-header {
         justify-content: space-between;
-        width: 100%;
+        width: 35%;
         padding: 5px;
 
         & img {
@@ -1236,7 +1238,7 @@ footer {
         #header {
             h1 {
                 font-size: 3rem;
-                padding: 9rem 0rem 0rem 5rem;
+                padding: 9rem 0rem 0rem 4.3rem;
             }
 
             #accent {
@@ -1245,7 +1247,7 @@ footer {
             }
 
             #container-span {
-                padding: 0rem 0rem 3.7rem 5rem;
+                padding: 0rem 0rem 3.7rem 4.4rem;
             }
         }
     }
@@ -1254,15 +1256,14 @@ footer {
         background-color: var(--cor3);
 
         #corpo {
-            flex-direction: column;
-            padding-top: 30px;
+            padding-top: 2rem;
 
             p {
                 text-align: justify;
-                max-width: none;
-                margin: 0px 5rem 3rem 5rem;
+                max-width: 40%;
+                margin: 0px 2rem 2rem 1rem;
                 padding: 0px;
-                font-size: 21px;
+                font-size: 18px;
             }
 
             .slideshow-container {
@@ -1271,11 +1272,9 @@ footer {
             }
 
             #corpo-fotos {
-                padding: 0rem 5rem;
-            }
-
-            .slides-wrapper img {
-                height: 95%;
+                justify-items: center;
+                padding: 0rem 0rem;
+                width: 45%;
             }
 
             .prev,
@@ -1291,8 +1290,8 @@ footer {
     }
 
     #button {
-        padding-top: 1.3rem;
-        padding-left: 5rem;
+        padding-top: 0rem;
+        padding-left: 4.3rem;
 
         button {
             padding: 11px 20px;
