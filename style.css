@@ -202,8 +202,9 @@ nav {
 
         #accentI {
             display: flex;
-            width: 9%;
-            margin: 1rem 0rem 3rem 0rem;
+            justify-content: center;
+            margin-bottom: 3rem;
+            width: 100%;
 
             #accent {
                 display: flex;
@@ -292,7 +293,7 @@ section {
             max-width: 50%;
             line-height: 1.6em;
             font-size: 17px;
-            margin: 2rem 7.5rem 0rem 0rem;
+            margin: 2rem 7.5rem 3rem 0rem;
         }
     }
 
@@ -3163,6 +3164,9 @@ footer {
             width: 9%;
         }
     }
+    #header-parallex {
+        padding-bottom: 29rem;
+    }
 
     .site-content h1 {
         font-size: 3.5rem;
@@ -3170,31 +3174,28 @@ footer {
     }
 
     #articleI {
-        background-color: var(--cor3);
-        height: auto;
-        width: 100%;
 
-        #accentI {
-            display: flex;
-            width: 9%;
-            margin: 1rem 0rem 3rem 0rem;
+        #c {
+            #accentI {
+                width: 100%;
+                margin-top: .7rem;
+                justify-content: center;
 
-            #accent {
-                display: flex;
-                width: 8rem;
-                height: 8px;
-                background: var(--cor1);
+                #accent {
+                    width: 9rem;
+                    height: 8px;
+                }
             }
-        }
 
-        & h2 {
-            display: flex;
-            color: var(--cor2);
-            font-family: "Avenir grosso";
-            text-align: center;
-            font-size: 4rem;
-            font-weight: normal;
-            padding: 3rem 0rem 0rem 0rem;
+            & h2 {
+                display: flex;
+                color: var(--cor2);
+                font-family: "Avenir grosso";
+                text-align: center;
+                font-size: 4rem;
+                font-weight: normal;
+                padding: 3rem 0rem 0rem 0rem;
+            }
         }
 
         h3 {
@@ -3253,11 +3254,9 @@ footer {
         }
 
         #wrap {
-            flex-direction: column-reverse;
-
             #image {
                 flex: auto;
-                width: 100%;
+                width: 0%;
                 height: auto;
                 min-height: 25rem;
             }

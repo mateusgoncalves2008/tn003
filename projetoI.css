@@ -132,7 +132,7 @@ article {
             font-weight: bold;
             line-height: 1.6em;
             font-size: 3.5rem;
-            padding: 8rem 0rem 0rem 19rem;
+            padding: 8rem 0rem 0rem 19.1rem;
             margin: 0;
         }
 
@@ -227,7 +227,7 @@ section {
 #button {
     display: flex;
     padding-bottom: 10rem;
-    padding-left: 18rem;
+    padding-left: 19rem;
 
     button {
         display: flex;
@@ -257,6 +257,8 @@ footer {
     padding: 40px 20px;
     text-align: center;
     font-family: "Raleway", sans-serif;
+    width: 96.1.2%;
+    height: 100%;
 
     #footer {
         max-width: 900px;
@@ -1202,10 +1204,10 @@ footer {
     }
 }
 
-@media (min-width: 1000px) and (max-width: 3000px) {
+@media (min-width: 1000px) and (max-width: 1100px) {
     #nav-header {
         justify-content: space-between;
-        width: 100%;
+        width: 35%;
         padding: 5px;
 
         & img {
@@ -1226,7 +1228,6 @@ footer {
         #nav-headerI {
             flex-direction: row;
             gap: 1rem;
-            
         }
     }
 
@@ -1236,7 +1237,7 @@ footer {
         #header {
             h1 {
                 font-size: 3rem;
-                padding: 9rem 0rem 0rem 5rem;
+                padding: 9rem 0rem 0rem 4.3rem;
             }
 
             #accent {
@@ -1245,7 +1246,7 @@ footer {
             }
 
             #container-span {
-                padding: 0rem 0rem 3.7rem 5rem;
+                padding: 0rem 0rem 3.7rem 4.4rem;
             }
         }
     }
@@ -1254,15 +1255,13 @@ footer {
         background-color: var(--cor3);
 
         #corpo {
-            flex-direction: column;
-            padding-top: 30px;
+            padding-top: 2rem;
 
             p {
-                text-align: justify;
-                max-width: none;
-                margin: 0px 5rem 3rem 5rem;
+                max-width: 40%;
+                margin: 0px 2rem 2rem 1rem;
                 padding: 0px;
-                font-size: 21px;
+                font-size: 18px;
             }
 
             .slideshow-container {
@@ -1271,11 +1270,9 @@ footer {
             }
 
             #corpo-fotos {
-                padding: 0rem 5rem;
-            }
-
-            .slides-wrapper img {
-                height: 95%;
+                justify-items: center;
+                padding: 0rem 0rem;
+                width: 45%;
             }
 
             .prev,
@@ -1291,8 +1288,8 @@ footer {
     }
 
     #button {
-        padding-top: 1.3rem;
-        padding-left: 5rem;
+        padding-top: 0rem;
+        padding-left: 4.3rem;
 
         button {
             padding: 11px 20px;
@@ -1303,6 +1300,909 @@ footer {
             background: #333;
             color: #eacc23;
             border: 0px solid var(--cor6);
+        }
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1200px) {
+    #nav-header {
+        justify-content: space-between;
+        width: 35%;
+        padding: 5px;
+
+        & img {
+            width: 95%;
+            height: 95%;
+        }
+
+        div {
+            #cima {
+                font-size: 30px;
+            }
+
+            #baixo {
+                font-size: 30px;
+            }
+        }
+
+        #nav-headerI {
+            flex-direction: row;
+            gap: 1rem;
+        }
+    }
+
+    article {
+        background-color: var(--cor5);
+
+        #header {
+            h1 {
+                line-height: 1.6em;
+                font-size: 3.5rem;
+                padding: 8rem 0rem 0rem 6.8rem;
+                margin: 0;
+            }
+
+            #accent {
+                width: 7rem;
+                height: 8px;
+            }
+
+            #container-span {
+                padding: 0rem 0rem 4rem 6.8rem;
+            }
+        }
+    }
+
+    section {
+        background-color: var(--cor3);
+
+        #corpo {
+            padding-top: 3rem;
+            justify-content: center;
+
+            p {
+                letter-spacing: 1px;
+                line-height: 1.5rem;
+                max-width: 32%;
+                padding-right: 2rem;
+                padding-bottom: 30px;
+            }
+
+            .slideshow-container {
+                max-width: 500px;
+                width: 100%;
+            }
+
+            #corpo-fotos {
+                margin-right: 2rem;
+                padding: 0rem 0rem;
+            }
+
+            .prev,
+            .next {
+                top: 45%;
+                padding: 0 10px;
+                padding-bottom: 3px;
+                font-weight: 100;
+                font-size: 35px;
+                margin: 0px 11px 0px 11px;
+            }
+        }
+    }
+
+    #button {
+        padding-bottom: 10rem;
+        padding-left: 6.8rem;
+
+        button {
+            padding: 11px 20px;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1280px) {
+    #nav-header {
+        justify-content: space-between;
+        width: 29%;
+        padding: 5px;
+
+        & img {
+            width: 95%;
+            height: 95%;
+        }
+
+        div {
+            #cima {
+                font-size: 30px;
+            }
+
+            #baixo {
+                font-size: 30px;
+            }
+        }
+
+        #nav-headerI {
+            flex-direction: row;
+            gap: 1rem;
+        }
+    }
+
+    #link-nav {
+        padding-right: 1rem;
+    }
+
+    article {
+        background-color: var(--cor5);
+
+        #header {
+            h1 {
+                line-height: 1.6em;
+                font-size: 3.5rem;
+                padding: 8rem 0rem 0rem 8rem;
+                margin: 0;
+            }
+
+            #accent {
+                width: 7rem;
+                height: 8px;
+            }
+
+            #container-span {
+                padding: 0rem 0rem 4rem 8rem;
+            }
+        }
+    }
+
+    section {
+        background-color: var(--cor3);
+
+        #corpo {
+            padding-top: 3rem;
+            justify-content: center;
+
+            p {
+                letter-spacing: 1px;
+                line-height: 1.5rem;
+                max-width: 31%;
+                padding-right: 2rem;
+                padding-bottom: 30px;
+            }
+
+            .slideshow-container {
+                max-width: 500px;
+                width: 100%;
+            }
+
+            #corpo-fotos {
+                margin-right: 2rem;
+                padding: 0rem 0rem;
+            }
+
+            .prev,
+            .next {
+                top: 45%;
+                padding: 0 10px;
+                padding-bottom: 3px;
+                font-weight: 100;
+                font-size: 35px;
+                margin: 0px 11px 0px 11px;
+            }
+        }
+    }
+
+    #button {
+        padding-bottom: 10rem;
+        padding-left: 8rem;
+
+        button {
+            padding: 11px 20px;
+            font-size: 1.1rem;
+        }
+
+        button:hover {
+            background: #333;
+            color: #eacc23;
+            border: 0px solid var(--cor6);
+        }
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1375px) {
+    #nav-header {
+        justify-content: space-between;
+        width: 29%;
+        padding: 5px;
+
+        & img {
+            width: 95%;
+            height: 95%;
+        }
+
+        div {
+            #cima {
+                font-size: 30px;
+            }
+
+            #baixo {
+                font-size: 30px;
+            }
+        }
+
+        #nav-headerI {
+            flex-direction: row;
+            gap: 1rem;
+        }
+    }
+
+    article {
+        background-color: var(--cor5);
+
+        #header {
+            h1 {
+                line-height: 1.6em;
+                font-size: 3.5rem;
+                padding: 8rem 0rem 0rem 12rem;
+                margin: 0;
+            }
+
+            #accent {
+                width: 7rem;
+                height: 8px;
+            }
+
+            #container-span {
+                padding: 0rem 0rem 4rem 12rem;
+            }
+        }
+    }
+
+    section {
+        background-color: var(--cor3);
+
+        #corpo {
+            padding-top: 3rem;
+            justify-content: center;
+
+            p {
+                letter-spacing: 1px;
+                line-height: 1.5rem;
+                max-width: 28%;
+                padding-right: 2rem;
+                padding-bottom: 30px;
+            }
+
+            .slideshow-container {
+                max-width: 500px;
+                width: 100%;
+            }
+
+            #corpo-fotos {
+                margin-right: 2rem;
+                padding: 0rem 0rem;
+            }
+
+            .prev,
+            .next {
+                top: 45%;
+                padding: 0 10px;
+                padding-bottom: 3px;
+                font-weight: 100;
+                font-size: 35px;
+                margin: 0px 11px 0px 11px;
+            }
+        }
+    }
+
+    #button {
+        padding-bottom: 10rem;
+        padding-left: 12rem;
+
+        button {
+            padding: 11px 20px;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media (min-width: 1375px) and (max-width: 1425px) {
+    #nav-header {
+        justify-content: space-between;
+        width: 27%;
+        padding: 5px;
+
+        & img {
+            width: 95%;
+            height: 95%;
+        }
+
+        div {
+            #cima {
+                font-size: 30px;
+            }
+
+            #baixo {
+                font-size: 30px;
+            }
+        }
+
+        #nav-headerI {
+            flex-direction: row;
+            gap: 1rem;
+        }
+    }
+
+    #link-nav {
+        padding-right: 1.5rem;
+    }
+
+    article {
+        background-color: var(--cor5);
+
+        #header {
+            h1 {
+                line-height: 1.6em;
+                font-size: 3.5rem;
+                padding: 8rem 0rem 0rem 16rem;
+                margin: 0;
+            }
+
+            #accent {
+                width: 7rem;
+                height: 8px;
+            }
+
+            #container-span {
+                padding: 0rem 0rem 4rem 16rem;
+            }
+        }
+    }
+
+    section {
+        background-color: var(--cor3);
+
+        #corpo {
+            padding-top: 3rem;
+            justify-content: center;
+
+            p {
+                letter-spacing: 1px;
+                line-height: 1.5rem;
+                max-width: 25%;
+                padding-right: 2rem;
+                padding-bottom: 30px;
+            }
+
+            .slideshow-container {
+                max-width: 500px;
+                width: 100%;
+            }
+
+            #corpo-fotos {
+                margin-right: 2rem;
+                padding: 0rem 0rem;
+            }
+
+            .prev,
+            .next {
+                top: 45%;
+                padding: 0 10px;
+                padding-bottom: 3px;
+                font-weight: 100;
+                font-size: 35px;
+                margin: 0px 11px 0px 11px;
+            }
+        }
+    }
+
+    #button {
+        padding-bottom: 10rem;
+        padding-left: 14.5rem;
+
+        button {
+            padding: 11px 20px;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media (min-width: 1425px) and (max-width: 1480px) {
+    #nav-header {
+        justify-content: space-between;
+        width: 27%;
+        padding: 5px;
+
+        & img {
+            width: 95%;
+            height: 95%;
+        }
+
+        div {
+            #cima {
+                font-size: 30px;
+            }
+
+            #baixo {
+                font-size: 30px;
+            }
+        }
+
+        #nav-headerI {
+            flex-direction: row;
+            gap: 1rem;
+        }
+    }
+
+    #link-nav {
+        padding-right: 1.5rem;
+    }
+
+    article {
+        background-color: var(--cor5);
+
+        #header {
+            h1 {
+                line-height: 1.6em;
+                font-size: 3.5rem;
+                padding: 8rem 0rem 0rem 17.5rem;
+                margin: 0;
+            }
+
+            #accent {
+                width: 7rem;
+                height: 8px;
+            }
+
+            #container-span {
+                padding: 0rem 0rem 4rem 17.5rem;
+            }
+        }
+    }
+
+    section {
+        background-color: var(--cor3);
+
+        #corpo {
+            padding-top: 3rem;
+            justify-content: center;
+
+            p {
+                letter-spacing: 1px;
+                line-height: 1.5rem;
+                max-width: 25%;
+                padding-right: 2rem;
+                padding-bottom: 30px;
+            }
+
+            .slideshow-container {
+                max-width: 500px;
+                width: 100%;
+            }
+
+            #corpo-fotos {
+                padding: 0rem 0rem;
+            }
+
+            .prev,
+            .next {
+                top: 45%;
+                padding: 0 10px;
+                padding-bottom: 3px;
+                font-weight: 100;
+                font-size: 35px;
+                margin: 0px 11px 0px 11px;
+            }
+        }
+    }
+
+    #button {
+        padding-bottom: 10rem;
+        padding-left: 16.6rem;
+
+        button {
+            padding: 11px 20px;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media (min-width: 1480px) and (max-width: 1535px) {
+    #nav-header {
+        justify-content: space-between;
+        width: 27%;
+        padding: 5px;
+
+        & img {
+            width: 95%;
+            height: 95%;
+        }
+
+        div {
+            #cima {
+                font-size: 30px;
+            }
+
+            #baixo {
+                font-size: 30px;
+            }
+        }
+
+        #nav-headerI {
+            flex-direction: row;
+            gap: 1rem;
+        }
+    }
+
+    #link-nav {
+        padding-right: 1.5rem;
+    }
+
+    article {
+        background-color: var(--cor5);
+
+        #header {
+            h1 {
+                line-height: 1.6em;
+                font-size: 3.5rem;
+                padding: 8rem 0rem 0rem 18.3rem;
+                margin: 0;
+            }
+
+            #accent {
+                width: 7rem;
+                height: 8px;
+            }
+
+            #container-span {
+                padding: 0rem 0rem 4rem 18.3rem;
+            }
+        }
+    }
+
+    section {
+        background-color: var(--cor3);
+
+        #corpo {
+            padding-top: 3rem;
+            justify-content: center;
+
+            p {
+                letter-spacing: 1px;
+                line-height: 1.5rem;
+                max-width: 25%;
+                padding-right: 2rem;
+                padding-bottom: 30px;
+            }
+
+            .slideshow-container {
+                max-width: 500px;
+                width: 100%;
+            }
+
+            #corpo-fotos {
+                padding: 0rem 0rem;
+            }
+
+            .prev,
+            .next {
+                top: 45%;
+                padding: 0 10px;
+                padding-bottom: 3px;
+                font-weight: 100;
+                font-size: 35px;
+                margin: 0px 11px 0px 11px;
+            }
+        }
+    }
+
+    #button {
+        padding-bottom: 10rem;
+        padding-left: 18.3rem;
+
+        button {
+            padding: 11px 20px;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media (min-width: 1535px) and (max-width: 1645px) {
+    #nav-header {
+        justify-content: space-between;
+        width: 27%;
+        padding: 5px;
+
+        & img {
+            width: 95%;
+            height: 95%;
+        }
+
+        div {
+            #cima {
+                font-size: 30px;
+            }
+
+            #baixo {
+                font-size: 30px;
+            }
+        }
+
+        #nav-headerI {
+            flex-direction: row;
+            gap: 1rem;
+        }
+    }
+
+    #link-nav {
+        padding-right: 1.5rem;
+    }
+
+    article {
+        background-color: var(--cor5);
+
+        #header {
+            h1 {
+                line-height: 1.6em;
+                font-size: 3.5rem;
+                padding: 8rem 0rem 0rem 19.6rem;
+                margin: 0;
+            }
+
+            #accent {
+                width: 7rem;
+                height: 8px;
+            }
+
+            #container-span {
+                padding: 0rem 0rem 4rem 19.6rem;
+            }
+        }
+    }
+
+    section {
+        background-color: var(--cor3);
+
+        #corpo {
+            padding-top: 3rem;
+            justify-content: center;
+
+            p {
+                letter-spacing: 1px;
+                line-height: 1.5rem;
+                max-width: 25%;
+                padding-right: 2rem;
+                padding-bottom: 30px;
+            }
+
+            .slideshow-container {
+                max-width: 500px;
+                width: 100%;
+            }
+
+            #corpo-fotos {
+                padding: 0rem 0rem;
+            }
+
+            .prev,
+            .next {
+                top: 45%;
+                padding: 0 10px;
+                padding-bottom: 3px;
+                font-weight: 100;
+                font-size: 35px;
+                margin: 0px 11px 0px 11px;
+            }
+        }
+    }
+
+    #button {
+        padding-bottom: 10rem;
+        padding-left: 18.6rem;
+
+        button {
+            padding: 11px 20px;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media (min-width: 1645px) and (max-width: 1750px) {
+    #nav-header {
+        justify-content: space-between;
+        width: 27%;
+        padding: 5px;
+
+        & img {
+            width: 95%;
+            height: 95%;
+        }
+
+        div {
+            #cima {
+                font-size: 30px;
+            }
+
+            #baixo {
+                font-size: 30px;
+            }
+        }
+
+        #nav-headerI {
+            flex-direction: row;
+            gap: 1rem;
+        }
+    }
+
+    #link-nav {
+        padding-right: 1.5rem;
+    }
+
+    article {
+        background-color: var(--cor5);
+
+        #header {
+            h1 {
+                line-height: 1.6em;
+                font-size: 3.5rem;
+                padding: 8rem 0rem 0rem 22.6rem;
+                margin: 0;
+            }
+
+            #accent {
+                width: 7rem;
+                height: 8px;
+            }
+
+            #container-span {
+                padding: 0rem 0rem 4rem 22.6rem;
+            }
+        }
+    }
+
+    section {
+        background-color: var(--cor3);
+
+        #corpo {
+            padding-top: 3rem;
+            justify-content: center;
+
+            p {
+                letter-spacing: 1px;
+                line-height: 1.5rem;
+                max-width: 25%;
+                padding-right: 2rem;
+                padding-bottom: 30px;
+            }
+
+            .slideshow-container {
+                max-width: 500px;
+                width: 100%;
+            }
+
+            #corpo-fotos {
+                padding: 0rem 0rem;
+            }
+
+            .prev,
+            .next {
+                top: 45%;
+                padding: 0 10px;
+                padding-bottom: 3px;
+                font-weight: 100;
+                font-size: 35px;
+                margin: 0px 11px 0px 11px;
+            }
+        }
+    }
+
+    #button {
+        padding-bottom: 10rem;
+        padding-left: 22.6rem;
+
+        button {
+            padding: 11px 20px;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media (min-width: 1750px) and (max-width: 1950px) {
+    #nav-header {
+        justify-content: space-between;
+        width: 22%;
+        padding: 5px;
+
+        & img {
+            width: 95%;
+            height: 95%;
+        }
+
+        div {
+            #cima {
+                font-size: 30px;
+            }
+
+            #baixo {
+                font-size: 30px;
+            }
+        }
+
+        #nav-headerI {
+            flex-direction: row;
+            gap: 1rem;
+        }
+    }
+
+    #link-nav {
+        padding-right: 2rem;
+    }
+
+    article {
+        background-color: var(--cor5);
+
+        #header {
+            h1 {
+                line-height: 1.6em;
+                font-size: 3.5rem;
+                padding: 8rem 0rem 0rem 26rem;
+                margin: 0;
+            }
+
+            #accent {
+                width: 7rem;
+                height: 8px;
+            }
+
+            #container-span {
+                padding: 0rem 0rem 4rem 26rem;
+            }
+        }
+    }
+
+    section {
+        background-color: var(--cor3);
+
+        #corpo {
+            padding-top: 3rem;
+            justify-content: center;
+
+            p {
+                letter-spacing: 1px;
+                line-height: 1.5rem;
+                max-width: 22%;
+                padding-right: 2rem;
+                padding-bottom: 30px;
+                font-size: 17px;
+            }
+
+            .slideshow-container {
+                max-width: 500px;
+                width: 100%;
+            }
+
+            #corpo-fotos {
+                padding: 0rem 0rem;
+            }
+
+            .prev,
+            .next {
+                top: 45%;
+                padding: 0 10px;
+                padding-bottom: 3px;
+                font-weight: 100;
+                font-size: 35px;
+                margin: 0px 11px 0px 11px;
+            }
+        }
+    }
+
+    #button {
+        padding-bottom: 10rem;
+        padding-left: 26rem;
+
+        button {
+            padding: 11px 20px;
+            font-size: 1.1rem;
         }
     }
 }
