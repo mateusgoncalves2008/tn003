@@ -3123,10 +3123,11 @@ footer {
     }
 }
 
-@media (min-width: 851px) and (max-width: 1000px) {
+@media (min-width: 851px) and (max-width: 1120px) {
     #nav-header {
         padding: 4px;
         gap: 0.5rem;
+        width: 21rem;
 
         & img {
             width: 4rem;
@@ -3157,15 +3158,16 @@ footer {
 
     .site-content {
         height: 100%;
-        padding-top: 13rem;
+        padding-top: 15rem;
 
         & img {
             height: 12%;
             width: 9%;
         }
     }
+
     #header-parallex {
-        padding-bottom: 29rem;
+        padding-bottom: 30rem;
     }
 
     .site-content h1 {
@@ -3174,12 +3176,10 @@ footer {
     }
 
     #articleI {
-
         #c {
             #accentI {
                 width: 100%;
-                margin-top: .7rem;
-                justify-content: center;
+                margin-top: 0.7rem;
 
                 #accent {
                     width: 9rem;
@@ -3188,12 +3188,7 @@ footer {
             }
 
             & h2 {
-                display: flex;
-                color: var(--cor2);
-                font-family: "Avenir grosso";
-                text-align: center;
                 font-size: 4rem;
-                font-weight: normal;
                 padding: 3rem 0rem 0rem 0rem;
             }
         }
@@ -3230,27 +3225,27 @@ footer {
         height: auto;
 
         .corpo {
-            height: 85.1%;
             align-items: start;
+            height: 85.1%;
 
             p {
-                max-width: 80%;
+                max-width: 90%;
                 line-height: 25px;
-                letter-spacing: 1px;
-                padding: 0px 0px 70px 10px;
+                letter-spacing: 1.5px;
+                padding: 0px 0px 70px 20px;
                 margin: 0;
             }
         }
 
         .corpo h2 {
-            font-size: 3.5rem;
-            padding: 3.3rem 0rem 0rem 10px;
+            font-size: 3.3rem;
+            padding: 3.3rem 0rem 0rem 20px;
             letter-spacing: 1px;
         }
 
         #accent {
             width: 8rem;
-            margin: 10px 0px 50px 10px;
+            margin: 10px 0px 50px 20px;
         }
 
         #wrap {
@@ -3270,75 +3265,37 @@ footer {
             gap: 1rem;
 
             .caixa {
-                padding: 0px 26px;
+                padding: 0px 41px;
             }
         }
     }
 
     #articleII {
-        background-color: var(--cor3);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
         & #cabecaII {
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-items: center;
-            flex-direction: column;
-
             h2 {
-                display: flex;
-                color: var(--cor2);
                 padding: 3rem 0rem 1rem 0rem;
                 font-size: 4rem;
-                font-family: "Avenir grosso";
-                font-weight: normal;
             }
             #accent {
-                display: flex;
-                width: 8rem;
+                width: 10rem;
                 height: 8px;
-                background: var(--cor1);
-                margin: 0rem 0rem 3rem;
+                margin: 0rem 0rem 0rem;
             }
         }
 
         #corpoII {
-            display: grid;
-            justify-items: center;
-            align-items: center;
-            grid-template-columns: repeat(2, 1fr);
             gap: 2rem;
-            width: 70.5%;
-            margin: 0 auto;
-            padding: 3rem;
-        }
-
-        .projct {
-            display: flex;
-            & img {
-                width: 100%;
-                border-radius: 7px;
-            }
+            width: 85%;
+            padding: 0rem;
+            margin: 5rem;
         }
     }
 
     figure {
-        background-color: var(--cor5);
         height: 47%;
 
         #a {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-
             h2 {
-                text-align: center;
-                color: var(--cor2);
-                font-family: "Avenir grosso";
-                font-weight: normal;
                 font-size: 4rem;
                 padding: 3rem 0rem 0rem 0rem;
             }
@@ -3346,269 +3303,282 @@ footer {
             #accent {
                 width: 9rem;
                 height: 8px;
-                background: var(--cor1);
                 margin: 15px 0px 0px;
             }
         }
 
         .cliente {
-            display: flex;
-            justify-content: center;
-            gap: 2.5rem;
-        }
-
-        #fotoIIIIII {
-            display: none;
-        }
-
-        .foto {
-            position: relative;
-            width: 100px;
-            height: 100px;
-            display: flex;
-            justify-content: center;
-            z-index: 0;
-        }
-
-        .foto {
-            margin: 2rem 1rem 0rem;
-            width: 9rem;
-            height: 9rem;
-        }
-
-        .foto img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .foto #cor {
-            display: none;
-        }
-
-        .foto:hover #cor {
-            display: block;
-        }
-
-        .foto:hover #pb {
-            display: none;
+            gap: 1rem;
         }
     }
 
     #articleIII {
-        background-color: var(--cor3);
-
         #b {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-
             h2 {
-                display: flex;
-                text-align: center;
-                font-family: "Avenir grosso";
-                font-weight: normal;
                 font-size: 4rem;
-                color: var(--cor2);
                 padding: 3rem 0rem 0rem 0rem;
             }
 
             #accent {
-                display: flex;
-                width: 9rem;
+                width: 10rem;
                 height: 8px;
-                background: var(--cor1);
                 margin: 15px 0px 60px;
             }
         }
 
         #map {
-            display: flex;
-            justify-content: center;
-            padding: 0rem 0rem 3rem 0rem;
+            padding: 0rem 2.8rem 3rem 2.8rem;
         }
     }
 
     #container {
-        grid-template-columns: repeat(2, 2fr);
-        padding: 0% 3%;
+        padding: 0% 5%;
         gap: 5rem;
     }
 
     #formulario {
-        flex-direction: column;
         width: 27rem;
 
         h2 {
             font-size: 28px;
             margin-bottom: 2rem;
-            font-family: "Avenir grosso";
-            font-weight: normal;
         }
 
         p {
-            color: #525456;
             margin-bottom: 2rem;
             line-height: 1.5;
             font-size: 17px;
             max-width: 100%;
             display: flex;
-            font-family: "Raleway";
-            font-weight: normal;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 6px;
-            font-style: italic;
-            color: #525456;
-        }
-
-        input,
-        textarea {
-            display: flex;
-            width: 27.5rem;
-            padding: 7px;
-            margin-bottom: 5px;
-        }
-
-        input:hover {
-            border: 2px solid #333;
-        }
-
-        textarea:hover {
-            border: 2px solid #333;
-        }
-
-        textarea {
-            height: 8rem;
-            resize: none;
-        }
-
-        #button {
-            display: flex;
-            justify-content: right;
-            padding-bottom: 2rem;
-
-            button {
-                font-family: "Avenir grosso";
-                font-weight: normal;
-                background: #333;
-                color: #eacc23;
-                padding: 4px 30px;
-                font-size: 1rem;
-                border: 0px solid var(--cor6);
-                transition: 0.5s ease-in-out;
-            }
-
-            button:hover {
-                background: var(--cor1);
-                color: var(--cor6);
-                border: 0px solid var(--cor6);
-                transition: 0.5s ease-in-out;
-            }
         }
     }
+}
 
-    #info {
-        background-color: var(--cor3);
-        align-items: center;
+@media (min-width: 1120px) and (max-width: 1200px) {
+    #nav-header {
+        padding: 4px;
+        gap: 0.5rem;
+        width: 21rem;
 
-        h2 {
-            display: flex;
-            font-size: 28px;
-            margin-bottom: 2rem;
-            font-family: "Avenir grosso";
-            font-weight: normal;
+        & img {
+            width: 4rem;
+            height: 4rem;
         }
 
-        p {
-            display: flex;
-            color: #525456;
-            line-height: 1.5;
-            font-family: "Raleway";
-            font-weight: normal;
-            max-width: 70%;
-            font-size: 17px;
+        #nav-headerI {
+            padding: 0px 1px 2px 9px;
         }
 
-        #p3 {
-            padding: 2rem 0rem 0rem 0rem;
-        }
+        & div {
 
-        .bloco {
-            margin-bottom: 35px;
-        }
-
-        #orcamento {
-            #accent {
-                display: block;
-                width: 60px;
-                height: 8px;
-                background: var(--cor1);
-                margin-bottom: 15px;
-            }
-
-            strong {
+            & #cima {
                 font-size: 28px;
-                display: block;
-                margin-top: 10px;
+                margin: 0;
+            }
+
+            & #baixo {
+                font-size: 29px;
             }
         }
     }
 
-    footer {
-        background-color: #111;
-        color: #ccc;
-        padding: 40px 20px;
-        text-align: center;
-        font-family: "Raleway", sans-serif;
+    .bg-video {
+        height: 100%;
+    }
 
-        #footer {
-            max-width: 900px;
-            margin: 0 auto;
+    .site-content {
+        height: 100%;
+        padding-top: 15rem;
 
-            p {
-                margin: 8px 0;
-                font-size: 14px;
-                line-height: 1.6;
+        & img {
+            height: 12%;
+            width: 9%;
+        }
+    }
 
-                p:first-child {
-                    font-size: 16px;
-                    font-weight: 600;
-                    color: var(--cor3);
+    #header-parallex {
+        padding-bottom: 30rem;
+    }
+
+    .site-content h1 {
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+    }
+
+    #articleI {
+        #c {
+            #accentI {
+                width: 100%;
+                margin-top: 0.7rem;
+
+                #accent {
+                    width: 9rem;
+                    height: 8px;
                 }
             }
 
-            a {
-                color: #eacc23;
-                text-decoration: none;
+            & h2 {
+                font-size: 4rem;
+                padding: 3rem 0rem 0rem 0rem;
             }
         }
 
-        a:hover {
-            text-decoration: underline;
+        h3 {
+            padding: 20px 30px 12px 30px;
+            font-size: 1.5rem;
+            max-width: 45%;
         }
 
-        #icons {
-            margin-top: 20px;
+        p {
+            padding: 0px 30px 12px 30px;
+            max-width: 75%;
+            font-size: 19px;
+            line-height: 1.6em;
+            letter-spacing: 1px;
+        }
 
-            a {
-                margin: 0 8px;
+        & img {
+            height: 23rem;
+            width: 100%;
+        }
+
+        & #fotos {
+            flex-direction: column;
+            padding: 0% 20%;
+            gap: 2rem;
+            padding-bottom: 5rem;
+        }
+    }
+
+    section {
+        width: 100%;
+        height: auto;
+
+        .corpo {
+            align-items: start;
+            height: 85.1%;
+
+            p {
+                max-width: 90%;
+                line-height: 25px;
+                letter-spacing: 1.5px;
+                padding: 0px 0px 70px 20px;
+                margin: 0;
             }
         }
 
-        img {
-            width: 28px;
-            opacity: 0.8;
-            transition: 0.3s;
+        .corpo h2 {
+            font-size: 3.3rem;
+            padding: 3.3rem 0rem 0rem 20px;
+            letter-spacing: 1px;
         }
 
-        img:hover {
-            opacity: 2;
-            transform: scale(1.09);
+        #accent {
+            width: 8rem;
+            margin: 10px 0px 50px 20px;
+        }
+
+        #wrap {
+            #image {
+                flex: auto;
+                width: 0%;
+                height: auto;
+                min-height: 25rem;
+            }
+        }
+    }
+
+    aside {
+        padding: 4rem 0rem 4rem 0rem;
+
+        & #caixa-corpo {
+            gap: 1rem;
+
+            .caixa {
+                padding: 0px 41px;
+            }
+        }
+    }
+
+    #articleII {
+        & #cabecaII {
+            h2 {
+                padding: 3rem 0rem 1rem 0rem;
+                font-size: 4rem;
+            }
+            #accent {
+                width: 10rem;
+                height: 8px;
+                margin: 0rem 0rem 0rem;
+            }
+        }
+
+        #corpoII {
+            gap: 2rem;
+            width: 85%;
+            padding: 0rem;
+            margin: 5rem;
+        }
+    }
+
+    figure {
+        height: 47%;
+
+        #a {
+            h2 {
+                font-size: 4rem;
+                padding: 3rem 0rem 0rem 0rem;
+            }
+
+            #accent {
+                width: 9rem;
+                height: 8px;
+                margin: 15px 0px 0px;
+            }
+        }
+
+        .cliente {
+            gap: 1rem;
+        }
+    }
+
+    #articleIII {
+        #b {
+            h2 {
+                font-size: 4rem;
+                padding: 3rem 0rem 0rem 0rem;
+            }
+
+            #accent {
+                width: 10rem;
+                height: 8px;
+                margin: 15px 0px 60px;
+            }
+        }
+
+        #map {
+            padding: 0rem 2.8rem 3rem 2.8rem;
+        }
+    }
+
+    #container {
+        padding: 0% 5%;
+        gap: 5rem;
+    }
+
+    #formulario {
+        width: 27rem;
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            margin-bottom: 2rem;
+            line-height: 1.5;
+            font-size: 17px;
+            max-width: 100%;
         }
     }
 }
