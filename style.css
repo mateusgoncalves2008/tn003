@@ -4043,7 +4043,7 @@ footer {
     }
 }
 
-@media (min-width: 1280px) and (max-width: 1300px) {
+@media (min-width: 1280px) and (max-width: 1450px) {
     #nav-header {
         padding: 4px;
         gap: 0.5rem;
@@ -4131,7 +4131,7 @@ footer {
         }
 
         & #fotos {
-            padding: 0% 5%;
+            padding: 0% 6%;
             gap: 1.5rem;
             padding-bottom: 5rem;
         }
@@ -4149,20 +4149,20 @@ footer {
                 max-width: 85%;
                 line-height: 25px;
                 letter-spacing: 2px;
-                padding: 0rem 0rem 5rem 4rem;
+                padding: 0rem 0rem 5rem 5rem;
                 margin: 0;
             }
         }
 
         .corpo h2 {
             font-size: 3.3rem;
-            padding: 3.3rem 0rem 0rem 4rem;
+            padding: 3.3rem 0rem 0rem 5rem;
             letter-spacing: 1px;
         }
 
         #accent {
             width: 8rem;
-            margin: 11px 0px 45px 67px;
+            margin: 11px 0px 45px 83px;
         }
 
         #wrap {
@@ -4202,7 +4202,7 @@ footer {
 
         #corpoII {
             gap: 2rem;
-            width: 88%;
+            width: 86%;
             padding: 0rem;
             margin: 5rem 0rem;
         }
@@ -4225,7 +4225,7 @@ footer {
         }
 
         .cliente {
-            gap: 4.5rem;
+            gap: 4.2rem;
             padding-bottom: 3rem;
         }
 
@@ -4255,8 +4255,242 @@ footer {
     }
 
     #container {
-        padding: 0% 10.5%;
-        gap: 9rem;
+        padding: 0% 12%;
+        gap: 11rem;
+    }
+
+    #formulario {
+        width: 27rem;
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            margin-bottom: 2rem;
+            line-height: 1.5;
+            font-size: 17px;
+            max-width: 100%;
+        }
+    }
+}
+
+@media (min-width: 1450px) and (max-width: 1535px) {
+    #nav-header {
+        padding-top: 25px;
+        gap: 0.5rem;
+        width: 26rem;
+
+        & img {
+            width: 4.6rem;
+            height: 5rem;
+        }
+
+        #nav-headerI {
+            padding: 0px 0px 3px 20px;
+        }
+
+        & div {
+            & #cima {
+                font-size: 32px;
+                margin: 0;
+            }
+
+            & #baixo {
+                font-size: 33px;
+            }
+        }
+    }
+
+    .bg-video {
+        height: 100%;
+    }
+
+    .site-content {
+        height: 100%;
+        padding-top: 15rem;
+
+        & img {
+            height: 12%;
+            width: 9%;
+        }
+    }
+
+    #header-parallex {
+        padding-bottom: 30rem;
+    }
+
+    .site-content h1 {
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+    }
+
+    #articleI {
+        #c {
+            #accentI {
+                width: 100%;
+                margin-top: 0.7rem;
+
+                #accent {
+                    width: 9rem;
+                    height: 8px;
+                }
+            }
+
+            & h2 {
+                font-size: 4rem;
+                padding: 3rem 0rem 0rem 0rem;
+            }
+        }
+
+        h3 {
+            padding: 20px 0px 30px 15px;
+            font-size: 1.5rem;
+            max-width: 45%;
+        }
+
+        p {
+            padding: 0px 15px 15px 15px;
+            max-width: 100%;
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: 1px;
+        }
+
+        & img {
+            height: 19rem;
+            width: 100%;
+        }
+
+        & #fotos {
+            padding: 0% 9%;
+            gap: 2rem;
+            padding-bottom: 5rem;
+        }
+    }
+
+    section {
+        width: 100%;
+        height: auto;
+
+        .corpo {
+            align-items: center;
+            height: 85.1%;
+
+            p {
+                align-items: center;
+                max-width: 60%;
+                line-height: 26px;
+                letter-spacing: 2px;
+                padding: 0rem 0rem 5rem 0rem;
+                margin: 0;
+            }
+        }
+
+        .corpo h2 {
+            font-size: 3.6rem;
+            padding: 3.3rem 1.8rem 0rem 0rem;
+            letter-spacing: 0px;
+        }
+
+        #accent {
+            width: 8rem;
+            margin: .7rem 0rem 3.6rem 0rem;
+        }
+
+        #wrap {
+            #image {
+                flex: auto;
+                width: 0%;
+                height: auto;
+                min-height: 25rem;
+            }
+        }
+    }
+
+    aside {
+        padding: 4rem 0rem 4rem 0rem;
+
+        & #caixa-corpo {
+            gap: 1.8rem;
+
+            .caixa {
+                padding: 0px 20px;
+            }
+        }
+    }
+
+    #articleII {
+        & #cabecaII {
+            h2 {
+                padding: 3rem 0rem 1rem 0rem;
+                font-size: 4rem;
+            }
+            #accent {
+                width: 10rem;
+                height: 8px;
+                margin: 0rem 0rem 0rem;
+            }
+        }
+
+        #corpoII {
+            gap: 2rem;
+            width: 83%;
+            padding: 0rem;
+            margin: 5rem 0rem;
+        }
+    }
+
+    figure {
+        height: 47%;
+
+        #a {
+            h2 {
+                font-size: 4rem;
+                padding: 3rem 0rem 0rem 0rem;
+            }
+
+            #accent {
+                width: 9rem;
+                height: 8px;
+                margin: 15px 0px 0px;
+            }
+        }
+
+        .cliente {
+            gap: 6.2rem;
+            padding-bottom: 3rem;
+        }
+
+        .foto img {
+            width: 115%;
+            height: 115%;
+        }
+    }
+
+    #articleIII {
+        #b {
+            h2 {
+                font-size: 4rem;
+                padding: 3rem 0rem 0rem 0rem;
+            }
+
+            #accent {
+                width: 10rem;
+                height: 8px;
+                margin: 15px 0px 60px;
+            }
+        }
+
+        #map {
+            padding-bottom: 3rem;
+        }
+    }
+
+    #container {
+        padding: 0% 16%;
+        gap: 11rem;
     }
 
     #formulario {
