@@ -2106,7 +2106,7 @@ footer {
     }
 }
 
-@media (min-width: 1750px) and (max-width: 1950px) {
+@media (min-width: 1750px) and (max-width: 1820px) {
     #nav-header {
         justify-content: space-between;
         width: 22%;
@@ -2203,6 +2203,434 @@ footer {
         button {
             padding: 11px 20px;
             font-size: 1.1rem;
+        }
+    }
+}
+
+@media (min-width: 1820px) and (max-width: 1950px) {
+    #nav-header {
+        justify-content: space-between;
+        width: 22%;
+        padding: 5px;
+
+        & img {
+            width: 95%;
+            height: 95%;
+        }
+
+        div {
+            #cima {
+                font-size: 30px;
+            }
+
+            #baixo {
+                font-size: 30px;
+            }
+        }
+
+        #nav-headerI {
+            flex-direction: row;
+            gap: 1rem;
+        }
+    }
+
+    #link-nav {
+        padding-right: 2rem;
+    }
+
+    article {
+        background-color: var(--cor5);
+
+        #header {
+            h1 {
+                line-height: 1.6em;
+                font-size: 3.5rem;
+                padding: 8rem 0rem 0rem 28.8rem;
+                margin: 0;
+            }
+
+            #accent {
+                width: 7rem;
+                height: 8px;
+            }
+
+            #container-span {
+                padding: 0rem 0rem 4rem 29rem;
+            }
+        }
+    }
+
+    section {
+        background-color: var(--cor3);
+
+        #corpo {
+            padding-top: 3rem;
+            justify-content: center;
+
+            p {
+                letter-spacing: 1px;
+                line-height: 1.5rem;
+                max-width: 22%;
+                padding-right: 2rem;
+                padding-bottom: 30px;
+                font-size: 17px;
+            }
+
+            .slideshow-container {
+                max-width: 500px;
+                width: 100%;
+            }
+
+            #corpo-fotos {
+                padding: 0rem 0rem;
+            }
+
+            .prev,
+            .next {
+                top: 45%;
+                padding: 0 10px;
+                padding-bottom: 3px;
+                font-weight: 100;
+                font-size: 35px;
+                margin: 0px 11px 0px 11px;
+            }
+        }
+    }
+
+    #button {
+        padding-bottom: 10rem;
+        padding-left: 28.8rem;
+
+        button {
+            padding: 11px 20px;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media (min-width: 1950px) and (max-width: 2100px) {
+    #nav-header {
+        justify-content: space-between;
+        width: 22%;
+        padding: 5px;
+
+        & img {
+            width: 95%;
+            height: 95%;
+        }
+
+        div {
+            #cima {
+                font-size: 30px;
+            }
+
+            #baixo {
+                font-size: 30px;
+            }
+        }
+
+        #nav-headerI {
+            flex-direction: row;
+            gap: 1rem;
+        }
+    }
+
+    #link-nav {
+        padding-right: 2rem;
+    }
+
+    article {
+        background-color: var(--cor5);
+
+        #header {
+            h1 {
+                line-height: 1.6em;
+                font-size: 3.5rem;
+                padding: 8rem 0rem 0rem 32.8rem;
+                margin: 0;
+            }
+
+            #accent {
+                width: 7rem;
+                height: 8px;
+            }
+
+            #container-span {
+                padding: 0rem 0rem 4rem 32.8rem;
+            }
+        }
+    }
+
+    section {
+        background-color: var(--cor3);
+
+        #corpo {
+            padding-top: 3rem;
+            justify-content: center;
+
+            p {
+                letter-spacing: 1px;
+                line-height: 1.5rem;
+                max-width: 22%;
+                padding-right: 2rem;
+                padding-bottom: 30px;
+                font-size: 18px;
+            }
+
+            .slideshow-container {
+                max-width: 500px;
+                width: 100%;
+            }
+
+            #corpo-fotos {
+                padding: 0rem 0rem;
+            }
+
+            .prev,
+            .next {
+                top: 45%;
+                padding: 0 10px;
+                padding-bottom: 3px;
+                font-weight: 100;
+                font-size: 35px;
+                margin: 0px 11px 0px 11px;
+            }
+        }
+    }
+
+    #button {
+        padding-bottom: 10rem;
+        padding-left: 32.8rem;
+
+        button {
+            padding: 11px 20px;
+            font-size: 1.1rem;
+        }
+    }
+
+    footer {
+        & #footer {
+            p {
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+@media (min-width: 2100px) and (max-width: 2230px) {
+    #nav-header {
+        justify-content: space-between;
+        width: 22%;
+        padding: 5px;
+
+        & img {
+            width: 95%;
+            height: 95%;
+        }
+
+        div {
+            #cima {
+                font-size: 30px;
+            }
+
+            #baixo {
+                font-size: 30px;
+            }
+        }
+
+        #nav-headerI {
+            flex-direction: row;
+            gap: 1rem;
+        }
+    }
+
+    #link-nav {
+        padding-right: 2rem;
+    }
+
+    article {
+        background-color: var(--cor5);
+
+        #header {
+            h1 {
+                line-height: 1.6em;
+                font-size: 3.5rem;
+                padding: 8rem 0rem 0rem 35.8rem;
+                margin: 0;
+            }
+
+            #accent {
+                width: 7rem;
+                height: 8px;
+            }
+
+            #container-span {
+                padding: 0rem 0rem 4rem 35.8rem;
+            }
+        }
+    }
+
+    section {
+        background-color: var(--cor3);
+
+        #corpo {
+            padding-top: 3rem;
+            justify-content: center;
+
+            p {
+                letter-spacing: 1px;
+                line-height: 1.5rem;
+                max-width: 22%;
+                padding-right: 2rem;
+                padding-bottom: 30px;
+                font-size: 18px;
+            }
+
+            .slideshow-container {
+                max-width: 500px;
+                width: 100%;
+            }
+
+            #corpo-fotos {
+                padding: 0rem 0rem;
+            }
+
+            .prev,
+            .next {
+                top: 45%;
+                padding: 0 10px;
+                padding-bottom: 3px;
+                font-weight: 100;
+                font-size: 35px;
+                margin: 0px 11px 0px 11px;
+            }
+        }
+    }
+
+    #button {
+        padding-bottom: 10rem;
+        padding-left: 35.8rem;
+
+        button {
+            padding: 11px 20px;
+            font-size: 1.1rem;
+        }
+    }
+
+    footer {
+        & #footer {
+            p {
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+@media (min-width: 2230px) and (max-width: 2300px) {
+    #nav-header {
+        justify-content: space-between;
+        width: 22%;
+        padding: 5px;
+
+        & img {
+            width: 95%;
+            height: 95%;
+        }
+
+        div {
+            #cima {
+                font-size: 30px;
+            }
+
+            #baixo {
+                font-size: 30px;
+            }
+        }
+
+        #nav-headerI {
+            flex-direction: row;
+            gap: 1rem;
+        }
+    }
+
+    #link-nav {
+        padding-right: 2rem;
+    }
+
+    article {
+        background-color: var(--cor5);
+
+        #header {
+            h1 {
+                line-height: 1.6em;
+                font-size: 3.5rem;
+                padding: 8rem 0rem 0rem 39.8rem;
+                margin: 0;
+            }
+
+            #accent {
+                width: 7rem;
+                height: 8px;
+            }
+
+            #container-span {
+                padding: 0rem 0rem 4rem 39.8rem;
+            }
+        }
+    }
+
+    section {
+        background-color: var(--cor3);
+
+        #corpo {
+            padding-top: 3rem;
+            justify-content: center;
+
+            p {
+                letter-spacing: 1px;
+                line-height: 1.5rem;
+                max-width: 22%;
+                padding-right: 2rem;
+                padding-bottom: 30px;
+                font-size: 18px;
+            }
+
+            .slideshow-container {
+                max-width: 500px;
+                width: 100%;
+            }
+
+            #corpo-fotos {
+                padding: 0rem 0rem;
+            }
+
+            .prev,
+            .next {
+                top: 45%;
+                padding: 0 10px;
+                padding-bottom: 3px;
+                font-weight: 100;
+                font-size: 35px;
+                margin: 0px 11px 0px 11px;
+            }
+        }
+    }
+
+    #button {
+        padding-bottom: 10rem;
+        padding-left: 39.8rem;
+
+        button {
+            padding: 11px 20px;
+            font-size: 1.1rem;
+        }
+    }
+
+    footer {
+        & #footer {
+            p {
+                font-size: 17px;
+            }
         }
     }
 }
